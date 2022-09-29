@@ -1,0 +1,32 @@
+/*  sass styles.scss styles.css  */
+/* explanation of above = sass + your file + the file you want to create */
+body {
+  background-color: darkred; }
+
+/* OR NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
+#contactform {
+  background-color: white; }
+  #contactform input, #contactform textarea {
+    background-color: white;
+    flex: 2; }
+  @media (min-width: 20em) {
+    #contactform {
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+/* Media Query Breakpoints */
+body {
+  background: white; }
+  @media (max-width: 60em) {
+    body {
+      background: red; } }
+  @media (max-width: 31em) {
+    body {
+      background: cyan; } }
+  @media (max-width: 20em) {
+    body {
+      background: green; } }
+
+/*# sourceMappingURL=styles.css.map */
