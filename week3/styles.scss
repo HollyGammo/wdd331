@@ -4,59 +4,14 @@
 
  //colors
  $body-background-color: darkred;
- $form-background-color: white;
- $input-color: white;
- $headlines-color : white;
+ $form-background-color: rgb(235, 199, 123);
+ $input-color: rgb(251, 243, 227);
+ $headlines-color: rgb(0, 0, 0);
+ $heading: white;
  //set breakpoint sizes
-$break-small: 20em;
-$break-medium: 31em;
-$break-large: 60em;
-
-
- body {
-    background-color: $body-background-color;          
-}
-
-/* NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
-
-#contactform {
-    background-color: $form-background-color;
-    input, textarea {
-        background-color: $input-color;
-        flex: 2;
-    }
-    @media (min-width: $break-small) {
-       & {
-          width: 90%;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto; 
-        } 
-    }
-}
-
-/* Mixins --------------------*/
-@mixin flex-container($axis, $wrap: nowrap) {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: $axis $wrap;
-    -ms-flex-flow: $axis $wrap;
-    flex-flow: $axis $wrap;
-}
-fieldset > div {
-    @include flex-container(column);        
-}
-@mixin center {
-    width: 90%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #content {
-      @include center;
-  }
+ $break-small: 20em;
+ $break-medium: 31em;
+ $break-large: 60em;
 
 /* Media Query Breakpoints */
 @mixin breakpoint($break) {
@@ -73,9 +28,68 @@ fieldset > div {
     }
     } 
 
-    body {
-        background: white;
-        @include breakpoint(large) { background: red; }
-        @include breakpoint(medium) { background: cyan; }
-        @include breakpoint(small) { background: green; }
-        }     
+/* Mixins --------------------*/
+@mixin flex-container($axis, $wrap: nowrap) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+}
+@mixin center {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contactform {
+      @include center;
+  }
+/*-------------------------------*/
+
+ body {
+    background-color: $body-background-color; 
+    color: $headlines-color;         
+}
+
+h1 {
+    color: $heading;
+    font-weight: bolder;
+}
+
+/* NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
+#contactform {
+    background-color: $form-background-color;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 5px;
+
+    fieldset > div {
+        @include flex-container(row, wrap);
+        padding-bottom: 15px;
+    }
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+    
+    label {
+        width: 200px;
+        text-align: right;
+        padding-right: 15px;
+      }          
+    @include breakpoint(large) {
+      & {
+      fieldset > div { @include flex-container(column);
+        padding-bottom: 0px; }
+      }
+      label {
+        text-align: left;
+      }
+    }
+
+}    
