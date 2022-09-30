@@ -5,11 +5,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* VARIABLES ----------*/
+$sm-font: 1.2rem;
+$med-font: 1.6rem;
+$lg-font: 4.2rem;
+$sm-img: 200px;
+$lg-img: 225px;
+$big: 600px;
+/*colors*/
+$font-color: #333;
+$border-specs: 1.5px solid #d0d0d0;
+$dec: #666;
+$hov: #00ddff;
+$act: #deb887;
+
+/* MIXINS --------------*/
+@mixin flex-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin article-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  align-items: baseline;
+  margin-top: -20px;
+}
+/*-----------------------*/
+
 body {
   margin: 0 auto;
   max-width: 725px;
   font-family: Helvetica, Arial, sans-serif;
-  color: #333;
+  color: $font-color;
   font-weight: 600;
 }
 h1,
@@ -19,18 +50,18 @@ li,
   font-family: "Lora", serif;
 }
 h1 {
-  font-size: 4.2rem;
+  font-size: $lg-font;
   text-align: center;
   padding: 40px 0;
 }
-h2,
-.post-date {
-  font-size: 1.6rem;
+h2 {
+  font-size: $med-font;
 }
 .post-date {
+  font-size: $med-font;
   text-transform: uppercase;
   text-align: right;
-  border-bottom: 1.5px solid #d0d0d0;
+  border-bottom: $border-specs;
   padding: 50px 15px 15px;
 }
 section {
@@ -38,31 +69,37 @@ section {
 }
 p {
   font-weight: 600;
-  line-height: 1.2rem;
+  line-height: $sm-font;
 }
-h1 a,
-h1 a:hover {
-  color: #333;
+/*Nesting*/
+h1 a {
+  color: $font-color;
+
+  &:hover {
+    color: $font-color;
+  }
 }
+/*Nesting*/
 a {
   text-decoration: none;
-  color: #666;
+  color: $dec;
+  &:hover {
+    color: $hov;
+    &:active {
+      color: $act;
+  }
+ }
 }
-a:hover {
-  color: #00ddff;
-}
-a:active {
-  color: #deb887;
-}
+
 nav {
-  border-top: 1.5px solid #d0d0d0;
-  border-bottom: 1.5px solid #d0d0d0;
+  border-top: $border-specs;
+  border-bottom: $border-specs;
 }
 li {
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: $sm-font;
   font-weight: 500;
   padding: 10px;
 }
@@ -71,27 +108,23 @@ figure {
   padding: 20px;
 }
 img {
-  width: 225px;
+  width: $lg-img;
 }
 
 /*--------LARGE VIEW-------*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: $big) {
   ul {
-    display: flex;
+    @include flex-cont;
     justify-content: right;
   }
   nav {
     margin-bottom: 15px;
   }
   article {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    align-items: baseline;
-    margin-top: -20px;
+    @include article-grid;
   }
   img {
-    width: 200px;
+    width: $sm-img;
   }
   .post-date,
   h2 {
@@ -100,7 +133,7 @@ img {
   }
   section {
     padding: 30px 5px 25px 15px;
-    border-bottom: 1.5px solid #d0d0d0;
-    border-left: 1.5px solid #d0d0d0;
+    border-bottom: $border-specs;
+    border-left: $border-specs;
   }
 }
