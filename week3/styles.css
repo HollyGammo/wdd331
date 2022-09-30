@@ -3,7 +3,7 @@
 body {
   background-color: darkred; }
 
-/* OR NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
+/* NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
 #contactform {
   background-color: white; }
   #contactform input, #contactform textarea {
@@ -15,6 +15,22 @@ body {
       max-width: 700px;
       margin-left: auto;
       margin-right: auto; } }
+
+/* Mixins --------------------*/
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+#content {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Media Query Breakpoints */
 body {

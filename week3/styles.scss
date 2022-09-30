@@ -17,7 +17,7 @@ $break-large: 60em;
     background-color: $body-background-color;          
 }
 
-/* OR NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
+/* NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
 
 #contactform {
     background-color: $form-background-color;
@@ -34,6 +34,29 @@ $break-large: 60em;
         } 
     }
 }
+
+/* Mixins --------------------*/
+@mixin flex-container($axis, $wrap: nowrap) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+}
+fieldset > div {
+    @include flex-container(column);        
+}
+@mixin center {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #content {
+      @include center;
+  }
 
 /* Media Query Breakpoints */
 @mixin breakpoint($break) {
@@ -55,4 +78,4 @@ $break-large: 60em;
         @include breakpoint(large) { background: red; }
         @include breakpoint(medium) { background: cyan; }
         @include breakpoint(small) { background: green; }
-        }   
+        }     
