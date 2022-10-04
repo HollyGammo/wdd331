@@ -13,13 +13,13 @@ html {
 body {
   font-family: verdana, arial, sans-serif;
   font-size: 85%;
-  color: #333;
-  background-color: #77c4d3;
+  color: $text-dark;
+  background-color: $back-ground-color;
   margin: 0;
   padding: 1em;
 }
 section {
-  background-color: white;
+  background-color: $text-light;
   padding: 1em;
   margin: 1em;
 }
@@ -84,7 +84,7 @@ h3 {
 
 h1 {
   font-family: $fonts-headline;
-  color: #f58b47;
+  color: $primary;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
@@ -92,7 +92,8 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  font-family: $fonts-headline;
+  color: $primary;
   font-weight: 900;
   /* Heavy */
   font-size: 6em;
@@ -101,6 +102,7 @@ h2 {
 }
 
 h3 {
+  color: $accent4;
   font-size: 2.25em;
   font-weight: 200;
   /* Thin */
@@ -119,13 +121,13 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: $text-dark;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
-  border-color: #ea2e49;
+  border-color: $accent1;
 }
 
 
