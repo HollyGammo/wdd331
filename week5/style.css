@@ -31,7 +31,7 @@ h2 {
     flex-wrap: wrap; 
 }
 .col-grid {
-    height: 160rem;
+    height: 170rem;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
