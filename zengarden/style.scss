@@ -1,7 +1,7 @@
 @use 'variables' as *; //this puts all the variables in the global namespace.
 @use 'atoms';
 @use 'molecules';
-@use 'organisms' as o;
+//@use 'organisms' as o;
 
 * {
   margin: 0;
@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  background-color: white;
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;

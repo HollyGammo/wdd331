@@ -6,9 +6,10 @@
 /* Colors */
 /*$grey-sidebar: rgba(51, 55, 69, 0.9);   ????????*/
 /* Font Colors */
+/*these styles here should describe how the atoms (elements) should appear 
+most of the time.  They can be overridden at the molecule (block) as necessary*/
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Fredericka the Great", Arial, cursive;
   margin: 0;
 }
@@ -24,7 +25,6 @@ h1 {
 }
 
 h2 {
-  background: #05173d;
   color: #fff;
   font-weight: 900; /* Heavy */
   font-size: 5em;
@@ -42,44 +42,6 @@ h3 {
   font-family: "Cabin", Arial, sans-serif;
 }
 
-h4 {
-  color: #05173d;
-  font-size: 2em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-  font-family: "Cabin", Arial, sans-serif;
-}
-
-h5 {
-  color: #05173d;
-  font-size: 2em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-  font-family: "Fredericka the Great", Arial, cursive;
-}
-
-h6 {
-  color: #05173d;
-  font-size: 2em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-  font-family: "Cabin Sketch", Arial, cursive;
-}
-
-p {
-  font-family: "Cabin", Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 0.5em 0;
-  margin: 0;
-}
-
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #05173d;
@@ -91,40 +53,11 @@ a:hover {
   border-color: #1a68ad;
 }
 
-[role=banner] > h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.summary {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 15% 0;
-}
-.summary p:last-child {
-  border-top: 1px solid #1a68ad;
-  margin-top: 1em;
-  padding-top: 1.5em;
-}
-.summary a {
-  color: #fff;
-}
-
-.preamble {
-  background: rgba(255, 255, 255, 0.9);
-  color: #05173d;
-  margin-left: -30%;
-  padding: 5% 5% 5% 30%;
-}
-
-.intro {
-  padding: 5%;
-}
-
+/*use the mixins from the atoms module to compose our molecules. If you 
+prefer the terminology 'blocks' and 'elements' feel free to use it instead!
+The base styling we made on our atoms (elements) does most of the 
+work...here we would make any modifications on the elements if they need 
+to appear differently in a certain molecule (block)*/
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +70,7 @@ html {
 }
 
 body {
+  background-color: white;
   font-family: "Cabin", Arial, sans-serif;
   font-size: 85%;
   color: #05173d;
