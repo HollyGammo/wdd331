@@ -4,42 +4,34 @@
 /*h2 & h3*/
 /*p*/
 /* Colors */
-/*$grey-sidebar: rgba(51, 55, 69, 0.9);   ????????*/
 /* Font Colors */
-/*these styles here should describe how the atoms (elements) should appear 
+/*These base styles describe how the atoms (elements) should appear 
 most of the time.  They can be overridden at the molecule (block) as necessary*/
-h2,
-h3 {
-  font-family: "Fredericka the Great", Arial, cursive;
-  margin: 0;
-}
-
 h1 {
-  background: #1a68ad;
   color: #fff;
-  display: inline-block;
-  font-weight: normal;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
-  font-family: "Cabin Sketch", Arial, cursive;
+  font-size: 10rem;
+  font-family: "Fredericka the Great", Arial, cursive;
 }
 
 h2 {
   color: #fff;
-  font-weight: 900; /* Heavy */
-  font-size: 5em;
-  letter-spacing: 1px;
-  line-height: 1em;
-  font-family: "Fredericka the Great", Arial, cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: "Cabin Sketch", Arial, cursive;
 }
 
 h3 {
+  color: #fc5e09;
+  font-size: 2.25rem;
+  line-height: 1rem;
+  font-family: "Cabin Sketch", Arial, cursive;
+}
+
+p {
   color: #05173d;
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
   font-family: "Cabin", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 a {
@@ -50,7 +42,7 @@ a {
 }
 
 a:hover {
-  border-color: #1a68ad;
+  border-color: #fc5e09;
 }
 
 /*# sourceMappingURL=_atoms.css.map */

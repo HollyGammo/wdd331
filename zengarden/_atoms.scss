@@ -1,39 +1,32 @@
+// atoms = elements = base styles
 @use 'variables' as *;
 
 // mixins to take care of repeated patterns.
 
-/*these styles here should describe how the atoms (elements) should appear 
+/*These base styles describe how the atoms (elements) should appear 
 most of the time.  They can be overridden at the molecule (block) as necessary*/
-
-h2,
-h3 {
-  font-family: $fonts-headline;
-  margin: 0;
-}
 h1 {
-  background: $accent1;
   color: $text-light;
-  display: inline-block;
-  font-weight: normal;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
-  font-family: $fonts-subhead;
+  font-size: 10rem;
+  font-family: $fonts-headline;
 }
 h2 {
   color: $text-light;
-  font-weight: 900; /* Heavy */
-  font-size: 5em;
-  letter-spacing: 1px;
-  line-height: 1em;
-  font-family: $fonts-headline;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: $fonts-subhead;
 }
 h3 {
+  color: $orange;
+  font-size: 2.25rem;
+  line-height: 1rem;  
+  font-family: $fonts-subhead;
+}
+p{
   color: $text-dark;
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;  
   font-family: $fonts-body;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -42,5 +35,5 @@ a {
   transition: border-color 0.2s ease-in-out;
 }
 a:hover {
-  border-color: $accent1;
+  border-color: $orange;
 }
