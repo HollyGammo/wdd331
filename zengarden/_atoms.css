@@ -8,15 +8,16 @@
 /*These base styles describe how the atoms (elements) should appear 
 most of the time.  They can be overridden at the molecule (block) as necessary*/
 h1 {
-  color: #fff;
-  font-size: 10rem;
+  color: #05173d;
+  font-size: 5rem;
   font-family: "Fredericka the Great", Arial, cursive;
 }
 
 h2 {
-  color: #fff;
+  color: #05173d;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
   font-family: "Cabin Sketch", Arial, cursive;
 }
 
@@ -25,13 +26,6 @@ h3 {
   font-size: 2.25rem;
   line-height: 1rem;
   font-family: "Cabin Sketch", Arial, cursive;
-}
-
-p {
-  color: #05173d;
-  font-family: "Cabin", Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1rem;
 }
 
 a {

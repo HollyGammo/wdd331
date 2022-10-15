@@ -9,17 +9,15 @@
   box-sizing: border-box;
 }
 html {
-  background-color: $background-color;
-  padding: 5%;
+  background-color: $navy;
 }
 
 body {
-  background-color: white;
+  background-color: $white;
   font-family: $fonts-body;
-  font-size: 85%;
   color: $text-dark;
-  background-color: $accent1;
-  padding: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 
