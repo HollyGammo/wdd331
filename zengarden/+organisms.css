@@ -1,0 +1,10 @@
+/*animations & other styling*/
+header {
+  background-image: url("images/camping-scene.svg");
+  background-position: top;
+  background-repeat: none;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=+organisms.css.map */

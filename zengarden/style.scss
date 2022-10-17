@@ -1,7 +1,7 @@
 @use 'variables' as *; //this puts all the variables in the global namespace.
 @use 'atoms';
 @use 'molecules';
-//@use 'organisms' as o;
+@use 'organisms' as o;
 
 * {
   margin: 0;
@@ -19,5 +19,13 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+header {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
 
+h2 {
+  writing-mode: vertical-rl;
+  grid-column: 9/10;
+}
 

@@ -41,6 +41,14 @@ a:hover {
 
 /*use the mixins from the atoms to compose molecules. Here we make 
 modifications of elements if they need to appear differently.*/
+/*animations & other styling*/
+/*header image*/
+html {
+  background-image: url("images/camping-scene.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +65,16 @@ body {
   color: #05173d;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+header {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+h2 {
+  writing-mode: vertical-rl;
+  grid-column: 9/10;
 }
 
 /*# sourceMappingURL=style.css.map */
