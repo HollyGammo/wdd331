@@ -1,76 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap");
 
-/* Fonts 
-$fonts-headline: 'Fredericka the Great', Arial, cursive;
-$fonts-subhead: 'Cabin Sketch', Arial, cursive;  
-$fonts-body:  'Cabin', Arial, sans-serif;  
-
+/*
 $navy:  #05173d;//$background-color: #05173d;
-//$primary: #05173d; 
 $med-blue: #1a68ad;//$accent1: #1a68ad;
 $blue-green: #00ffd9;//$accent2: #7afacc;
 $yellow: #ffd813;//$accent3: #ffe35c;
 $orange: #fc5e09;//$accent4: #faa624;
 $white: #fff;
-
-$text-dark: #05173d;
-$text-light: #fff;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: "Cabin", Arial, sans-serif;
+  background: linear-gradient(
+    0.5turn,
+    #05173d,
+    #1a68ad,
+    #7afacc,
+    #1a68ad,
+    #05173d,
+    #05173d
+  );
+  color: #05173d;
+}
+header {
+  background-image: url("images/campingtest.png");
+  background-attachment: fixed;
+  position: initial;
+  height: 725px;
+}
+/*.scroll {
+    position: initial;
+    background-attachment: fixed;
+    height: 450px;
+    background-image: url("images/dcpl.webp");
+  }
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    background-color: $navy;
-  }
-  
-  body {
-    background-color: $white;
-    font-family: $fonts-body;
-    color: $text-dark;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  header {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  
-  h2 {
-    writing-mode: vertical-rl;
-    grid-column: 9/10;
-  }
-  h1 {
-    color: $text-dark;
-    font-size: 5rem;
-    font-family: $fonts-headline;
-  }
-  h2 {
-    color: $text-dark;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-family: $fonts-subhead;
-  }
-  h3 {
-    color: $orange;
-    font-size: 2.25rem;
-    line-height: 1rem;  
-    font-family: $fonts-subhead;
-  }
-  a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    color: $text-dark;
-    text-decoration: none;
-    transition: border-color 0.2s ease-in-out;
-  }
-  a:hover {
-    border-color: $orange;
-  }
-  html {
-    background-image: url("images/camping-scene.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+h1 {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  padding-top: 30px;
+  left: 105px;
+  font-family: "Fredericka the Great", Arial, cursive;
+}
+h2 {
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Cabin Sketch", Arial, cursive;
+}
+h3 {
+  color: #faa624;
+  font-size: 2.25rem;
+  font-family: "Cabin Sketch", Arial, cursive;
+  padding-bottom: 10px;
+}
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #05173d;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+a:hover {
+  border-color: #faa624;
+}
+.summary p:first-child {
+  color: #fc5e09;
+  position: absolute;
+  margin-left: 105px;
+  top: 120px;
+  width: 250px;
+}
+.summary p:nth-child(2) {
+  background-color: white;
+  border-top: 5px solid #fc5e09;
+  border-bottom: 5px solid #fc5e09;
+  text-align: center;
+  padding: 30px;
+}
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 50px;
+  width: 815px;
+  margin-bottom: 20px;
+}
+/*names*/
+.wrapper {
+  display: flex;
+  width: auto;
+  gap: 200px;
+  margin: 0 50px 10px 50px;
+}
+.wrapper a,
+.wrapper li {
+  color: white;
+  list-style: none;
+  line-height: 1.5rem;
+}
+.design-selection {
+  grid-column: 2/3;
+}
+.design-archives {
+  grid-column: 4/5;
+}
+.zen-resources {
+  grid-column: 6/7;
+}
+/*main grid*/
+.main {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+}
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  grid-column: 1/4;
+}
+/* .preamble {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-image: url("images/bear.svg");
+        background-repeat: none;
+        top: 1050px;
+        left: 600px;
+        z-index: -10;
+
+        animation: animal1 7s ease infinite;
     }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 190px;
+        height: 75px;
+        background-image: url("images/bear.svg");
+        top: 1900px;
+        left: 0;
+        z-index: -10;
+
+        animation: animal2 10s ease infinite;
+    }
+}
+@keyframes animal1 {
+    0% {
+        left: 0;
+        transform: translatex(-100px);
+    }
+    100% {
+        transform: translatex(1000px);
+    }
+}
+@keyframes animal2 {
+    0% {
+        left: 0;
+        transform: translatex(-100px);
+    }
+    100% {
+        transform: translatex(1500px);
+    }
+}
+.main {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 70px;
+        background-image: url("images/bear.svg");
+        background-repeat: none;
+        top: 800px;
+        right: 100px;
+        z-index: -10;
+        animation: animal3 8s ease infinite;
+    }
+
+    @keyframes animal3 {
+        0% {
+            // left: 0;
+            transform: translatex(2000px);
+        }
+        100% {
+            transform: translatex(-2000px);
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 125px;
+        background-image: url("images/bear.svg");
+        background-repeat: none;
+        top: 2200px;
+        right: 0;
+        z-index: -10;
+        animation: animal4 15s ease infinite;
+    }
+    @keyframes animal4 {
+        0% {
+            // left: 0;
+            transform: translatex(2000px);
+        }
+        100% {
+            transform: translatex(-2000px);
+        }
+    }
+}
+*/
