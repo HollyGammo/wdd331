@@ -66,27 +66,26 @@ h3 {
   padding-bottom: 10px;
 }
 a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #933604;
+  color: rgba(30, 74, 155, 0.703);
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 footer a {
-    color: #ffd813;
+    color: white;
 
 }
 footer {
+  background-image: url("images/sign.png");  
   display: flex;
-  background-color: white;
-  border-top: 5px solid #fc7609;
-  border-bottom: 5px solid #fc7609;
+  flex-direction: column;
   text-align: center;
   gap: 80px;
   padding: 40px 100px;
 
 }
 a:hover {
-  border-color: #fc7609;
+  
+  color: #fc7609;
 }
 .summary p:first-child {
   color: #fc7609;
@@ -94,12 +93,6 @@ a:hover {
   margin-left: 105px;
   top: 120px;
   width: 250px;
-}
- 
-.preamble {
-    border-bottom: 5px solid #fc7609;
-    background-color: white;
-    padding: 40px 150px;
 }
 .summary p:nth-child(2) {
     border-top: 5px solid #fc7609;
@@ -111,13 +104,14 @@ a:hover {
     #05173d
   );
   }
+.preamble,
 .explanation,
 .participation,
 .benefits,
 .requirements {
   background-color: rgba(255, 255, 255, 0.5);
   margin-left: 50px;
-  width: 815px;
+  width: 680px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 1rem;
