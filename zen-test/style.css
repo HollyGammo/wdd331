@@ -5,7 +5,7 @@ $navy:  #05173d;
 $med-blue: #1a68ad;
 $blue-green: #6effe9;
 $yellow: #ffd813;
-$orange: #fc7609;
+$orange: #f4ad3e; & #fc7609;
 $white: #fff;
 */
 * {
@@ -13,98 +13,116 @@ $white: #fff;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+    background: linear-gradient(
+        0.5turn,
+        #05173d,
+        #1a68ad,
+        hsl(188, 91%, 75%)
+      );
+}
+.page-wrapper {
+    display: grid;
+}
 body {
+  background-image: url(images/new.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0 auto;
   font-family: "Cabin", Arial, sans-serif;
-  background: linear-gradient(
-    0.5turn,
-    #05173d,
-    #1a68ad,
-    hsl(188, 93%, 73%),
-    #1a68ad,
-    #05173d,
-    #05173d
-  );
   color: #05173d;
 }
+h1 {
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    padding-top: 30px;
+    left: 105px;
+    font-family: "Fredericka the Great", Arial, cursive;
+  }
+  h2 {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Cabin Sketch", Arial, cursive;
+  }
+  h3 {
+    color: #fc7609;
+    font-size: 2.25rem;
+    font-family: "Cabin Sketch", Arial, cursive;
+    padding-bottom: 10px;
+  }
+/*==============Header Section=================*/
 header {
-  background-image: url("images/campingtest.png");
-  background-attachment: fixed;
   height: 700px;
 }
-/*.scroll {
-    position: initial;
-    background-attachment: fixed;
-    height: 450px;
-    background-image: url("images/dcpl.webp");
+.summary p:first-child {
+    color: #f4ad3e;
+    position: absolute;
+    margin-left: 105px;
+    top: 125px;
+    width: 250px;
   }
-*/
-
-h1 {
-  color: white;
-  font-size: 5rem;
-  position: absolute;
-  padding-top: 30px;
-  left: 105px;
-  font-family: "Fredericka the Great", Arial, cursive;
-}
-h2 {
-  writing-mode: vertical-lr;
-  position: absolute;
-  top: 45px;
-  left: 50px;
-  color: white;
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-family: "Cabin Sketch", Arial, cursive;
-}
-h3 {
-  color: #fc7609;
-  font-size: 2.25rem;
-  font-family: "Cabin Sketch", Arial, cursive;
-  padding-bottom: 10px;
-}
+  .summary p:nth-child(2) {
+    color: white;
+    position: absolute;
+    margin-left: 105px;
+    top: 210px;
+    width: 174px; 
+    padding: 5px;
+    font-size: .9rem;
+    }
+  .summary p:nth-child(2) a {
+    color: white;
+    text-decoration: underline;
+  }
+/*==========Links====================*/
 a {
-  color: rgba(30, 74, 155, 0.703);
+  color: rgba(57, 97, 164, 0.703);
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
+a:hover {
+    color: #fc7609;
+  }
+/*========Footer - Sign=============*/  
 footer a {
     color: white;
-
 }
 footer {
-  background-image: url("images/sign.png");  
+  margin-left: 700px;
+  background-image: url(images/sign.png) no-repeat right 20px bottom;   
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 80px;
-  padding: 40px 100px;
+  gap: 40px;
+}
 
+/*=========Road to... Section========*/
+.preamble {
+  border-top: 5px solid #f4ad3e;
+  border-bottom: 5px solid #f4ad3e;
+  background: #ffffff url(images/pole-fish.svg) no-repeat left 70px top 30px; 
+  height: 380px;
+  margin-top: 30px;
 }
-a:hover {
-  
-  color: #fc7609;
+.preamble h3 {
+    margin-top: 105px;
+    margin-bottom: 20px;
+    padding-left: 70px;
 }
-.summary p:first-child {
-  color: #fc7609;
-  position: absolute;
-  margin-left: 105px;
-  top: 120px;
-  width: 250px;
+.preamble p {
+    padding-left: 70px;
+    width: 725px;  
 }
-.summary p:nth-child(2) {
-    border-top: 5px solid #fc7609;
-    padding: 30px;
-    background: linear-gradient(
-    0.25turn,
-    hsl(188, 93%, 73%),
-    #1a68ad,
-    #05173d
-  );
-  }
-.preamble,
+/*=======Main Text Blocks Sections=======*/ 
+.explanation {
+    margin-top: 50px;
+}
 .explanation,
 .participation,
 .benefits,
@@ -116,12 +134,13 @@ a:hover {
   padding: 20px;
   border-radius: 1rem;
 }
-/*names*/
+/*====== Design - Archives - Resources ======*/
+
 .wrapper {
   display: flex;
   width: auto;
   gap: 200px;
-  margin: 0 50px 0px 50px;
+  margin: 30px 50px 0px 50px;
 }
 .wrapper a,
 .wrapper li {
