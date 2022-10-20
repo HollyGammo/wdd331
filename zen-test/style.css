@@ -14,15 +14,13 @@ $white: #fff;
   box-sizing: border-box;
 }
 html {
+    max-width: 2000px;
     background: linear-gradient(
         0.5turn,
         #05173d,
         #1a68ad,
         #85EAF9
       );
-}
-.page-wrapper {
-    display: grid;
 }
 body {
   background-image: url(images/new.png);
@@ -57,6 +55,34 @@ h1 {
     font-family: "Cabin Sketch", Arial, cursive;
     padding-bottom: 10px;
   }
+/*Grid*/
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 50px 240px 100px 240px 100px 240px auto;
+  }
+  section {
+    grid-row: 1/2;
+    grid-column: 1/8;
+  }
+  aside {
+    grid-row: 2/3;
+    grid-column: 2/8
+  }
+  .main {
+    grid-row: 3/4;
+    grid-column: 2/8;
+  }
+  /*===============*/
+
+/*==========Links====================*/
+a {
+    color: #ffd813;
+    text-decoration: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  a:hover {
+      color: #f4ad3e;
+    }
 /*==============Header Section=================*/
 header {
   height: 700px;
@@ -81,28 +107,7 @@ header {
     color: white;
     text-decoration: underline;
   }
-/*==========Links====================*/
-a {
-  color: #ffd813;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out;
-}
-a:hover {
-    color: #f4ad3e;
-  }
-/*========Footer - Sign=============*/  
-footer a {
-    color: white;
-}
-footer {
-  margin-left: 700px;
-  background-image: url(images/sign.png) no-repeat right 20px bottom;   
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-/*=========Road to... Section========*/
+/*=========Fishing Section========*/
 .preamble {
   border-top: 10px solid #f4ad3e;
   border-bottom: 10px solid #f4ad3e;
@@ -119,46 +124,59 @@ footer {
     padding-left: 70px;
     width: 725px;  
 }
+/*====== Design - Archives - Resources ======*/
+.wrapper {
+    display: flex;
+    gap: 140px;
+    margin: 40px 0 40px;
+    background-color: rgba(30, 48, 78, 0.5);
+    padding: 20px;
+    border-radius: 1rem;
+    width: 920px;
+    border: 1px solid white;
+  }
+  .wrapper h3 {
+      font-size: 1.75rem;
+  }
+  .wrapper a,
+  .wrapper li {
+    color: white;
+    list-style: none;
+    line-height: 1.5rem;
+  }
 /*=======Main Text Blocks Sections=======*/ 
+
 .explanation {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .explanation,
 .participation,
 .benefits,
 .requirements {
-  color: white;  
+  color: white; 
+  line-height: 1.5rem; 
   background-color: rgba(30, 48, 78, 0.5);
-  margin-left: 50px;
   width: 680px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 1rem;
 }
-/*====== Design - Archives - Resources ======*/
-
-.wrapper {
+/*========Footer - Bottom Section=============*/  
+footer a {
+    color: white;
+    margin-left: 60px;
+}
+footer { 
+  background: transparent url(images/sign.png) no-repeat left bottom 50px; 
+  height: 500px;
   display: flex;
-  width: auto;
-  gap: 200px;
-  margin: 30px 50px 0px 50px;
+  flex-direction: column;
+  gap: 21px;
+  
 }
-.wrapper a,
-.wrapper li {
-  color: white;
-  list-style: none;
-  line-height: 1.5rem;
+footer a:first-child {
+  margin-top: 220px; 
 }
-.design-selection {
-  grid-column: 2/3;
-}
-.design-archives {
-  grid-column: 4/5;
-}
-.zen-resources {
-  grid-column: 6/7;
-}
-
 
 
 
