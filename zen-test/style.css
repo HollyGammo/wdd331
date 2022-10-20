@@ -3,7 +3,7 @@
 /*
 $navy:  #05173d;
 $med-blue: #1a68ad;
-$blue-green: #6effe9;
+$blue-green: #85EAF9;
 $yellow: #ffd813;
 $orange: #f4ad3e;
 $white: #fff;
@@ -18,7 +18,7 @@ html {
         0.5turn,
         #05173d,
         #1a68ad,
-        hsl(188, 91%, 75%)
+        #85EAF9
       );
 }
 .page-wrapper {
