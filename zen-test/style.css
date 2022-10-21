@@ -178,7 +178,14 @@ footer a:first-child {
   margin-top: 220px; 
 }
 
+/*+++++++++ Tablet View ++++++++++++*/
+@media only screen and (min-width: 600px) {
+    body {
+        background-size: 60%;
+    }
+}
 
+/*+++++++++ Desktop View ++++++++++++*/
+@media only screen and ( min-width: 920px) {
 
-
-
+}
