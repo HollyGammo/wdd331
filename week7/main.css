@@ -1,0 +1,60 @@
+.curtain {
+    margin: 0 auto;
+    width: 100%; /* Takes up 100% of the screen width */
+    height: 100vh; /* vh 100% of viewport height */
+    overflow: hidden; /* Curtain panels slide out of view */
+  }
+  .curtain__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+   input[type=checkbox] { /* allow mouse pointer to click anywhere on screen */
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+/* When checkbox/mouse is clicked */
+  input[type=checkbox]:checked ~ div.curtain__panel--left { /* Left curtain opens */
+    transform: translateX(0);
+  }
+   input[type=checkbox]:checked ~ div.curtain__panel--right { /* right curtain opens */
+    transform: translateX(0);
+  }
+  .curtain__panel { /* Curtains meet in the center & take up half the screen */
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0.50turn, #000000, #000000, #ff7300, #7300c5); /* Curtain gradient color */
+    width: 50%;
+    height: 100vh;
+    float: left;
+    position: relative; /* position curtains side-by-side */
+    z-index: 2; /* z-index stacks curtain panels in front of ghost */
+    color: #fff;
+    transition: all 1s ease-out;
+  }
+  .curtain__panel--left {  /* Position left curtain */
+    justify-content: flex-end;
+    transform: translateX(-100%);
+  }
+  .curtain__panel--right { /* Position right curtain */
+    justify-content: flex-start;
+    transform: translateX(100%);
+  }
+  .curtain__content {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    padding: 1rem 0;
+    position: absolute; /* Positions ghost behind curtains */
+    z-index: 1; /* z-index 1 stacks ghost behind the curtains */
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .curtain__content img { /*Ghost picture size */
+    height: 80%;
+  }
