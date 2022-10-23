@@ -14,11 +14,11 @@ $white: #fff;
   box-sizing: border-box;
 }
 html {
-  max-width: 125rem;
+  
   background: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);
 }
 body {
-  background-image: url(images/new.png);
+  background: url(images/new.png) no-repeat left fixed;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 auto;
@@ -178,6 +178,13 @@ footer a:first-child {
 
 /*+++++++++ Tablet View ++++++++++++*/
 @media (min-width: 600px) {
+  body {
+    background: url(images/new.png) no-repeat center 100px fixed;
+    background-size: cover;
+  }
+  header {
+    height: 1200px;
+  }
   h1 {
     font-size: 4rem;
     left: 105px;
