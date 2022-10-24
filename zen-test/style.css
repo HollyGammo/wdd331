@@ -213,6 +213,7 @@ header {
   margin: 0 25px 20px 0;
   padding: 20px;
   border-radius: 1rem;
+  position: relative;
 }
 .requirements {
   margin-bottom: 175px;
@@ -328,26 +329,42 @@ footer a:first-child {
   }
 }
 
-/* sun vibing */
-/*
-@keyframes sunrise {
-  0% {
-    box-shadow: none;
-  }
+
+
+/*=======Moving Objects==========*/
+/* Bear on bike */
+div .requirements h3:before {
+  content: "";
+  width: 200px;
+  height: 225px;
+  display: inline-block;
+  background-image: url("images/bear.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 335px;
+  left: -100px;
+  animation: ride 8s 1s linear infinite;
 }
-@keyframes rays {
-  0% {
-    box-shadow: 0 0 0 0 #FFA90A, 0 0 0 20px #ffb83380, 0 0 0 40px #ffb83340, 0 0 0 60px #ffb83320, 0 0 0 80px #ffb83310, 0 0 40px 100px #ffb83310;
+  @keyframes ride {
+    0% {
+      right: 0;
+      transform: translatex(-100px);
+    }
+    100% {
+      transform: translatex(2400px);
+    }
   }
-  100% {
-    box-shadow: 0 0 0 20px #ffb83380, 0 0 0 40px #ffb83340, 0 0 0 60px #ffb83320, 0 0 0 80px #ffb83310, 0 0 0 100px #ffb83300, 0 0 40px 100px #ffb83310;
-  }
-}
-header {
-  margin: -50% auto;
-  padding: 20px;
-  background-color: #ffb833;
-  z-index: -20;
-  box-shadow: 0 0 0 20px #ffb83380, 0 0 0 40px #ffb83340, 0 0 0 60px #ffb83320, 0 0 0 80px #ffb83310, 0 0 0 100px #ffb83300, 0 0 40px 100px #ffb83310;
-  animation: sunrise 4s infinite linear, rays 2s 4s infinite linear;
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
