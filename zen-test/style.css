@@ -1,62 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap");
 
-/*========Moonlight==========*/
-header h2:before {
-  content: '';
-  width: 75px;
-  height: 75px;
-  display:inline-block;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 100px;
-  left: 800px;
-  z-index: -20;
-  box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
-  animation: moon 2s infinite linear, shine 2s 2s infinite linear;
-}
-@keyframes moon {
-  0% {
-    box-shadow: none;
-  }
-}
-@keyframes shine {
-  0% {
-    box-shadow: 0 0 0 0 #ffffff, 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 20px 50px #ffffff00;
-  }
-  100% {
-    box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
-  }
-}
-/*==================================*/
-/*========Sun==========*/
-footer a:before {
-  content: '';
-  width: 75px;
-  height: 75px;
-  display:inline-block;
-  background: #ffd813;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 550px;
-  left: 800px;
-  z-index: -10;
-  box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
-  animation: sun 2s infinite linear, beams 2s 2s infinite linear;
-}
-@keyframes sun {
-  0% {
-    box-shadow: none;
-  }
-}
-@keyframes beams {
-  0% {
-    box-shadow: 0 0 0 0 #ffd813, 0 0 0 10px#ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 20px 50px #ffd81300;
-  }
-  100% {
-    box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
-  }
-}
 /*
 $navy:  #05173d;
 $med-blue: #1a68ad;
@@ -71,7 +14,6 @@ $white: #fff;
   box-sizing: border-box;
 }
 html {
-  
   background: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);
 }
 body {
@@ -81,6 +23,8 @@ body {
   margin: 0 auto;
   font-family: "Cabin", Arial, sans-serif;
   color: #05173d;
+  Position: relative;
+  overflow-x: hidden;
 }
 h1 {
   color: white;
@@ -170,6 +114,7 @@ header {
   background: #ffffff url(images/pole-fish.svg) no-repeat left 45px top 30px;
   height: 490px;
   margin-top: 30px;
+  position: relative;
 }
 .preamble h3 {
   margin-top: 85px;
@@ -332,7 +277,85 @@ footer a:first-child {
 
 
 /*=======Moving Objects==========*/
+/* Moonlight */
+header h2:before {
+  content: '';
+  width: 75px;
+  height: 75px;
+  display:inline-block;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 800px;
+  z-index: -20;
+  box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
+  animation: moon 2s infinite linear, shine 2s 2s infinite linear;
+}
+@keyframes moon {
+  0% {
+    box-shadow: none;
+  }
+}
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff, 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 20px 50px #ffffff00;
+  }
+  100% {
+    box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
+  }
+}
+/* Sun */
+footer a:before {
+  content: '';
+  width: 75px;
+  height: 75px;
+  display:inline-block;
+  background: #ffd813;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 550px;
+  left: 800px;
+  z-index: -10;
+  box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
+  animation: sun 2s infinite linear, beams 2s 2s infinite linear;
+}
+@keyframes sun {
+  0% {
+    box-shadow: none;
+  }
+}
+@keyframes beams {
+  0% {
+    box-shadow: 0 0 0 0 #ffd813, 0 0 0 10px#ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 20px 50px #ffd81300;
+  }
+  100% {
+    box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
+  }
+}
 /* Bear on bike */
+section:before { /*use overflow-x: hidden; on the parent*/
+  content: "";
+  width: 200px;
+  height: 225px;
+  display: inline-block;
+  background-image: url("images/bear.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 335px;
+  left: -100px;
+  animation: ride 8s 1s linear infinite;
+}
+  @keyframes ride {
+    0% {
+      left: 0;
+      transform: translatex(-100px);
+    }
+    100% {
+      transform: translatex(2400px);
+    }
+  }
+/*
 div .requirements h3:before {
   content: "";
   width: 200px;
@@ -354,6 +377,7 @@ div .requirements h3:before {
       transform: translatex(2400px);
     }
   }
+  */
 
 
 
