@@ -64,10 +64,12 @@ section {
 aside {
   grid-row: 2/3;
   grid-column: 2/8;
+  z-index: 4;
 }
 .main {
   grid-row: 3/4;
   grid-column: 2/8;
+  z-index: 5;
 }
 /*===============*/
 
@@ -113,6 +115,7 @@ header {
   height: 490px;
   margin-top: 30px;
   position: relative;
+  z-index: 10;
 }
 .preamble h3 {
   margin-top: 85px;
@@ -173,6 +176,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 21px;
+ 
 }
 footer a:first-child {
   margin-top: 220px;
@@ -275,6 +279,26 @@ footer a:first-child {
 
 
 /*=======Moving Objects==========*/
+/* Swimming Fish */
+.preamble p:before { /*use overflow-x: hidden; on the parent*/
+  content: url("images/fish.png");
+  position: absolute;
+  top: 180px;
+  right: 5%;
+  z-index: 11;
+  animation: swim 20s linear infinite;
+}
+  @keyframes swim {
+    0% {
+        transform: translate(10vw,-25vh) rotate(-10deg);
+    }
+    50% {
+        transform: translate(-50vw,10vh) rotate(0deg);
+    }
+    100% {
+        transform: translate(-100vw,5vh) rotate(15deg);
+        }
+}
 /* Moonlight */
 header h2:before {
   content: '';
@@ -341,7 +365,7 @@ body:before { /*use overflow-x: hidden; on the parent*/
   background-repeat: no-repeat;
   position: fixed;
   top: 525px;
-  animation: ride 8s .1s linear infinite;
+  animation: ride 10s linear infinite;
 }
   @keyframes ride {
     0% {
@@ -353,25 +377,22 @@ body:before { /*use overflow-x: hidden; on the parent*/
   }
  /* owl Flying *//*use overflow-x: hidden; on the parent*/
 body:after {
-  position: absolute;
-  top: 200px;
+  position: fixed;
+  top: 125px;
   left: 5%;
   content: url(images/owl.png);
-  transform: translate(-10vw,50vh) rotate(0deg);
-  animation: fly 30s ease-in-out infinite;
+  animation: fly 8s linear infinite;
+  z-index: 1;
 }
 @keyframes fly {
   0% {
-      transform: translate(-10vw,50vh) rotate(20deg);
+    transform: translate(100vw,-2vh) rotate(-30deg);    
   }
-  50% {
-      transform: translate(50vw,50vh) rotate(15deg);
-  }
-  60% {
-      transform: translate(55vw,50vh) rotate(-20deg);
+  40% {
+      transform: translate(50vw,30vh) rotate(-20deg);
   }
   100% {
-      transform: translate(100vw,-2vh) rotate(-20deg);
+      transform: translate(-10vw,-2vh) rotate(10deg);
       }
 }
 
