@@ -17,15 +17,12 @@ html {
   background: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);
 }
 body {
-  background: url(images/new.png) no-repeat left fixed;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0 auto;
+  background: url(images/new.png) no-repeat left contain;
   font-family: "Cabin", Arial, sans-serif;
   color: #05173d;
   Position: relative;
   overflow-x: hidden;
-
+  max-width: 2200px;
 }
 h1 {
   color: white;
@@ -344,40 +341,64 @@ body:before { /*use overflow-x: hidden; on the parent*/
   background-repeat: no-repeat;
   position: fixed;
   top: 525px;
-  animation: ride 8s 1s linear infinite;
+  animation: ride 8s .1s linear infinite;
 }
   @keyframes ride {
     0% {
-      left: 0;
-      transform: translatex(-100px);
+      transform: translatex(-5px);
     }
     100% {
-      transform: translatex(2400px);
+      transform: translatex(2200px);
     }
   }
-/*
-div .requirements h3:before {
-  content: "";
-  width: 200px;
-  height: 225px;
-  display: inline-block;
-  background-image: url("images/bear.png");
-  background-repeat: no-repeat;
+ /* owl Flying *//*use overflow-x: hidden; on the parent*/
+body:after {
   position: absolute;
-  top: 335px;
-  left: -100px;
-  animation: ride 8s 1s linear infinite;
+  top: 200px;
+  left: 5%;
+  content: url(images/owl.png);
+  transform: translate(-10vw,50vh) rotate(0deg);
+  animation: fly 30s ease-in-out infinite;
 }
-  @keyframes ride {
+@keyframes fly {
+  0% {
+      transform: translate(-10vw,50vh) rotate(20deg);
+  }
+  50% {
+      transform: translate(50vw,50vh) rotate(15deg);
+  }
+  60% {
+      transform: translate(55vw,50vh) rotate(-20deg);
+  }
+  100% {
+      transform: translate(100vw,-2vh) rotate(-20deg);
+      }
+}
+
+
+
+
+
+/*body:after { 
+  content: "";
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  background-image: url("images/owl.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 200px;
+  animation: fly 15s .1s linear infinite;
+}
+  @keyframes fly {
     0% {
-      right: 0;
-      transform: translatex(-100px);
+      transform: translatex(2200px);
     }
     100% {
-      transform: translatex(2400px);
+      transform: translatex(-2200px);
     }
   }
-  */
+  */ 
 
 
 
