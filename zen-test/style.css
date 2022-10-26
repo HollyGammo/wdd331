@@ -25,6 +25,7 @@ body {
   color: #05173d;
   Position: relative;
   overflow-x: hidden;
+
 }
 h1 {
   color: white;
@@ -288,7 +289,7 @@ header h2:before {
   position: absolute;
   top: 100px;
   left: 800px;
-  z-index: -20;
+  
   box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
   animation: moon 2s infinite linear, shine 2s 2s infinite linear;
 }
@@ -334,16 +335,15 @@ footer a:before {
   }
 }
 /* Bear on bike */
-section:before { /*use overflow-x: hidden; on the parent*/
+body:before { /*use overflow-x: hidden; on the parent*/
   content: "";
   width: 200px;
   height: 225px;
   display: inline-block;
   background-image: url("images/bear.png");
   background-repeat: no-repeat;
-  position: absolute;
-  top: 335px;
-  left: -100px;
+  position: fixed;
+  top: 525px;
   animation: ride 8s 1s linear infinite;
 }
   @keyframes ride {
