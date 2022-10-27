@@ -318,32 +318,32 @@ header h1:before {
   left: 600px;
   position: fixed;
   transform-origin:100% 0;
-  animation:star 1s infinite ease-out;
+  animation:star 4s infinite 3s ease-in;
   animation-direction: normal;
   opacity:0;
 }
 header h1:after {
   content:'';
   position:absolute;
-  top:0px;
-  left:4px;
   border:2px solid #F00;
   border-width:2px 150px 2px 150px; 
   border-color:transparent transparent transparent #FFF;
   transform:rotate(-45deg) translate3d(1px, -1px, 0);
   transform-origin:0% 100%;
-  animation:shooting 1s infinite  ease-out;
+  animation:shooting 4s infinite 3s ease-out;
   animation-direction: normal;
 }
 @keyframes shooting {
   0% {
-    
+    transform:scale(1) rotate(-45deg) translate(0px, -1px);
+    top: 50px;
+    left: 1050px;
   }
-  50% {
-    transform:scale(1) rotate(-45deg) translate(0px, 0px);
-  }
+ 
   100% {
-    transform:scale(0.5) rotate(-45deg) translate(0px, -1px);
+    transform:scale(0) rotate(-45deg) translate(0px, -2px);
+    top: 175px;
+    left: 925px;
   }
 }
 
@@ -351,14 +351,14 @@ header h1:after {
   0% {
     opacity:0;
     transform:scale(0) rotate(0) translate3d(0, 0, 0);
-  }
-  50% {
-    opacity:1;
-    transform:scale(1) rotate(0) translate3d(-200px, 200px, 0);
+    top: 50px;
+    left: 1050px;
   }
   100% {
     opacity:0;
     transform:scale(1) rotate(0) translate3d(-300px, 300px, 0);
+    top: 175px;
+    left: 925px;
   }
 }
 /* Moon */
