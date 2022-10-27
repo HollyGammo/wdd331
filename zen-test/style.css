@@ -17,7 +17,7 @@ html {
   background: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);
 }
 body {
-  background: url(images/new.png) no-repeat left contain;
+  background: url(images/new.png) no-repeat center 100px fixed;
   font-family: "Cabin", Arial, sans-serif;
   color: #05173d;
   position: relative;
@@ -314,8 +314,6 @@ header h1:before {
   height:4px;
   border-radius:50%;
   background:#FFF;
-  top: 500px;
-  left: 600px;
   position: fixed;
   transform-origin:100% 0;
   animation:star 4s infinite 3s ease-in;
@@ -324,7 +322,7 @@ header h1:before {
 }
 header h1:after {
   content:'';
-  position:absolute;
+  position: fixed;
   border:2px solid #F00;
   border-width:2px 150px 2px 150px; 
   border-color:transparent transparent transparent #FFF;
