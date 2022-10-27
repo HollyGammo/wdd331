@@ -463,7 +463,7 @@ body:after {/*use overflow-x: hidden; on the parent*/
     transform: translate(100vw,-2vh) rotate(-30deg);    
   }
   40% {
-      transform: translate(50vw,30vh) rotate(-20deg);
+      transform: translate(50vw,20vh) rotate(-20deg);
   }
   100% {
       transform: translate(-10vw,-2vh) rotate(10deg);
