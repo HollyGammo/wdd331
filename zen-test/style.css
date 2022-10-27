@@ -335,13 +335,13 @@ header h1:after {
   0% {
     transform:scale(1) rotate(-45deg) translate(0px, -1px);
     top: 50px;
-    left: 1050px;
+    left: 1125px;
   }
  
   100% {
     transform:scale(0) rotate(-45deg) translate(0px, -2px);
     top: 175px;
-    left: 925px;
+    left: 1000px;
   }
 }
 
@@ -350,13 +350,13 @@ header h1:after {
     opacity:0;
     transform:scale(0) rotate(0) translate3d(0, 0, 0);
     top: 50px;
-    left: 1050px;
+    left: 1125px;
   }
   100% {
     opacity:0;
     transform:scale(1) rotate(0) translate3d(-300px, 300px, 0);
     top: 175px;
-    left: 925px;
+    left: 1000px;
   }
 }
 /* Moon */
