@@ -307,7 +307,61 @@ footer a:first-child {
         transform: translate(-100vw,5vh) rotate(15deg);
         }
 }
-/* Moonlight */
+/* Shooting Star */
+header h1:before {
+  display:block;
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:#FFF;
+  top: 500px;
+  left: 600px;
+  position: fixed;
+  transform-origin:100% 0;
+  animation:star 1s infinite ease-out;
+  animation-direction: normal;
+  opacity:0;
+}
+header h1:after {
+  content:'';
+  position:absolute;
+  top:0px;
+  left:4px;
+  border:2px solid #F00;
+  border-width:2px 150px 2px 150px; 
+  border-color:transparent transparent transparent #FFF;
+  transform:rotate(-45deg) translate3d(1px, -1px, 0);
+  transform-origin:0% 100%;
+  animation:shooting 1s infinite  ease-out;
+  animation-direction: normal;
+}
+@keyframes shooting {
+  0% {
+    
+  }
+  50% {
+    transform:scale(1) rotate(-45deg) translate(0px, 0px);
+  }
+  100% {
+    transform:scale(0.5) rotate(-45deg) translate(0px, -1px);
+  }
+}
+
+@keyframes star {
+  0% {
+    opacity:0;
+    transform:scale(0) rotate(0) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity:1;
+    transform:scale(1) rotate(0) translate3d(-200px, 200px, 0);
+  }
+  100% {
+    opacity:0;
+    transform:scale(1) rotate(0) translate3d(-300px, 300px, 0);
+  }
+}
+/* Moon */
 header h2:before {
   content: '';
   width: 75px;
@@ -361,34 +415,48 @@ footer a:before {
     box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
   }
 }
-/* Bear on bike */
+/* Racoon */
 body:before { /*use overflow-x: hidden; on the parent*/
-  content: "";
-  width: 200px;
-  height: 225px;
-  display: inline-block;
-  background-image: url("images/bear.png");
-  background-repeat: no-repeat;
+  position: fixed;
+  content: url(images/racoon.png);
+  animation: scurry 10s linear infinite;
+  
+}
+@keyframes scurry {
+  0%   {bottom: 25px; right: -50px;}
+  12%  {bottom: 25px; right: 455px;}
+  13%  {bottom: 80px; right: 475px;}
+  47%  {bottom: 80px; right: 475px;}
+  50%  {bottom: 45px; right: 600px;}
+  60%  {bottom: 45px; right: 1200px;}
+  61%  {bottom: 80px; right: 1230px;}
+  70%  {bottom: 80px; right: 1230px;}
+  71%  {bottom: 70px; right: 1260px;}
+  77%  {bottom: 70px; right: 1260px;}
+  78%  {bottom: 40px; right: 1300px;}
+  89%  {bottom: 40px; right: 1800px;}
+  100% {bottom: 40px; right: 2225px;}
+}
+/* Bear on bike */
+header h2:after { /*use overflow-x: hidden; on the parent*/
   position: fixed;
   top: 525px;
+  position: fixed;
+  top: 525px;
+  content: url(images/bear.png);
   animation: ride 10s linear infinite;
 }
   @keyframes ride {
-    0% {
-      transform: translatex(-5px);
-    }
-    100% {
-      transform: translatex(2200px);
-    }
-  }
- /* owl Flying *//*use overflow-x: hidden; on the parent*/
-body:after {
+    0% {bottom: 25px; left: -100px;}
+    100% {bottom: 25px; left: 2200px;}
+}
+ /* Owl */
+body:after {/*use overflow-x: hidden; on the parent*/
   position: fixed;
   top: 125px;
   left: 5%;
   content: url(images/owl.png);
-  animation: fly 8s linear infinite;
-  
+  animation: fly 8s linear infinite;  
 }
 @keyframes fly {
   0% {
@@ -402,32 +470,21 @@ body:after {
       }
 }
 
-
-
-
-
-/*body:after { 
-  content: "";
-  width: 150px;
-  height: 100%;
-  display: inline-block;
-  background-image: url("images/owl.png");
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 200px;
-  animation: fly 15s .1s linear infinite;
-}
-  @keyframes fly {
-    0% {
-      transform: translatex(2200px);
-    }
-    100% {
-      transform: translatex(-2200px);
-    }
+/*
+@keyframes scurry {
+  0% {
+    transform: translate(10vw,-2vh) rotate(0deg);    
   }
-  */ 
-
-
+  40% {
+    transform: translate(100vw,-2vh) rotate(0deg);    
+  }
+  50% {
+      transform: translate(50vw,30vh) rotate(-10deg);
+  }
+  100% {
+      transform: translate(-10vw,3vh) right(-180deg);
+      }
+}
 
 
 
