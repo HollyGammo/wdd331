@@ -32,7 +32,7 @@
   }
 
 /* Swimming Fish */
-.preamble p:before { /*use overflow-x: hidden; on the parent*/
+.preamble p:before { 
     content: url("images/fish.png");
     position: absolute;
     top: 200px;
@@ -192,7 +192,7 @@
   }
 
   /* Racoon */
-  body:before { /*use overflow-x: hidden; on the parent*/
+  body:before { 
    @include breakpoint(tablet) {
     position: fixed;
     content: url(images/racoon.png);
@@ -216,10 +216,9 @@
   }
 
   /* Bear on bike */
-  header h2:after { /*use overflow-x: hidden; on the parent*/
+  header h2:after { 
     position: fixed;
-    top: 525px;
-    position: fixed;
+    bottom: 30px;
     content: url(images/bear.png);
     animation: ride 6s linear infinite;
     @include breakpoint(tablet) {
@@ -230,11 +229,11 @@
     }
   }
     @keyframes ride {
-      0% {bottom: 25px; left: -100px;}
-      100% {bottom: 25px; left: 2200px;}
+      0% {bottom: 30px; left: -100px;}
+      100% {bottom: 30px; left: 2200px;}
   }
    /* Owl */
-  body:after {/*use overflow-x: hidden; on the parent*/
+  body:after {
     position: fixed;
     top: 125px;
     left: 5%;

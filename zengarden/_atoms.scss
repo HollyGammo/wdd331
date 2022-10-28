@@ -14,12 +14,14 @@ html {
 }
 body {
   @include main-text;
-  background: url(images/new.png) no-repeat center 30% fixed;
+  background-image : url(images/new.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
-  overflow-x: hidden;
   @include breakpoint(tablet) {
-    background: url(images/new.png) no-repeat center 100px fixed;
-    background-size: cover;
+    background-position: center top 70px;
   }
 }
 h1 {
@@ -63,6 +65,7 @@ h3 {
   display: grid;
   grid-template-columns: 25px 1fr 25px;
   position: relative;
+  overflow-x: hidden;
 }
 section {
   grid-row: 1/2;
@@ -89,7 +92,13 @@ a:hover {
 /*==============Header Section=================*/
 header {
   position: relative;
-  height: 700px;
+  height: 720px;
+  @include breakpoint(tablet) {
+    height: 1100px;
+  }
+  @include breakpoint(desktop) {
+    height: 720;
+  }
 }
 .summary p:first-child {
   color: $orange;

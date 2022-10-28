@@ -25,14 +25,16 @@ html {
 body {
   font-family: "Cabin", Arial, sans-serif;
   color: #ffffff;
-  background: url(images/new.png) no-repeat center 30% fixed;
+  background-image: url(images/new.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
-  overflow-x: hidden;
 }
 @media (min-width: 600px) {
   body {
-    background: url(images/new.png) no-repeat center 100px fixed;
-    background-size: cover;
+    background-position: center top 70px;
   }
 }
 
@@ -100,6 +102,7 @@ h3 {
   display: grid;
   grid-template-columns: 25px 1fr 25px;
   position: relative;
+  overflow-x: hidden;
 }
 
 section {
@@ -132,7 +135,17 @@ a:hover {
 /*==============Header Section=================*/
 header {
   position: relative;
-  height: 700px;
+  height: 720px;
+}
+@media (min-width: 600px) {
+  header {
+    height: 1100px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    height: 720;
+  }
 }
 
 .summary p:first-child {
@@ -337,7 +350,7 @@ footer a:first-child {
 }
 
 /* Swimming Fish */
-.preamble p:before { /*use overflow-x: hidden; on the parent*/
+.preamble p:before {
   content: url("images/fish.png");
   position: absolute;
   top: 200px;
@@ -515,7 +528,6 @@ footer a:before {
   }
 }
 /* Racoon */
-body:before { /*use overflow-x: hidden; on the parent*/ }
 @media (min-width: 600px) {
   body:before {
     position: fixed;
@@ -579,10 +591,9 @@ body:before { /*use overflow-x: hidden; on the parent*/ }
   }
 }
 /* Bear on bike */
-header h2:after { /*use overflow-x: hidden; on the parent*/
+header h2:after {
   position: fixed;
-  top: 525px;
-  position: fixed;
+  bottom: 30px;
   content: url(images/bear.png);
   animation: ride 6s linear infinite;
 }
@@ -599,16 +610,16 @@ header h2:after { /*use overflow-x: hidden; on the parent*/
 
 @keyframes ride {
   0% {
-    bottom: 25px;
+    bottom: 30px;
     left: -100px;
   }
   100% {
-    bottom: 25px;
+    bottom: 30px;
     left: 2200px;
   }
 }
 /* Owl */
-body:after { /*use overflow-x: hidden; on the parent*/
+body:after {
   position: fixed;
   top: 125px;
   left: 5%;
