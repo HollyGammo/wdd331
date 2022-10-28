@@ -26,13 +26,13 @@ body {
   font-family: "Cabin", Arial, sans-serif;
   color: #ffffff;
   background: url(images/new.png) no-repeat center 30% fixed;
-  background-size: cover;
   position: relative;
   overflow-x: hidden;
 }
 @media (min-width: 600px) {
   body {
     background: url(images/new.png) no-repeat center 100px fixed;
+    background-size: cover;
   }
 }
 
@@ -132,12 +132,7 @@ a:hover {
 /*==============Header Section=================*/
 header {
   position: relative;
-  height: 500px;
-}
-@media (min-width: 600px) {
-  header {
-    height: 700px;
-  }
+  height: 700px;
 }
 
 .summary p:first-child {
@@ -175,7 +170,7 @@ header {
     top: 195px;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .summary p:nth-child(2) {
     top: 210px;
   }
@@ -199,7 +194,7 @@ header {
 @media (min-width: 600px) {
   .preamble {
     background: #ffffff url(images/pole-fish.svg) no-repeat left 70px top 30px;
-    height: 380px;
+    height: 385px;
   }
 }
 
@@ -279,13 +274,6 @@ header {
   z-index: 2;
 }
 
-.explanation p,
-.participation p,
-.benefits p,
-.requirements p {
-  width: 40.3rem;
-}
-
 .requirements {
   margin-bottom: 175px;
 }
@@ -314,10 +302,17 @@ footer a:first-child {
   border: 1px solid #ffffff;
   transition: max-width 1s ease-in-out;
   background-color: rgba(30, 48, 78, 0.5);
+  max-width: 42.5rem;
 }
 @media (min-width: 1000px) {
   .wrapper:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
     max-width: 72rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrapper:hover p, .explanation:hover p, .participation:hover p, .benefits:hover p, .requirements:hover p {
+    max-width: 40rem;
   }
 }
 
@@ -345,9 +340,21 @@ footer a:first-child {
 .preamble p:before { /*use overflow-x: hidden; on the parent*/
   content: url("images/fish.png");
   position: absolute;
-  top: 180px;
-  right: 5%;
-  animation: swim 20s linear infinite;
+  top: 200px;
+  right: -20px;
+  animation: swim 8s linear infinite;
+}
+@media (min-width: 600px) {
+  .preamble p:before {
+    top: 180px;
+    right: 5%;
+    animation: swim 14s linear infinite;
+  }
+}
+@media (min-width: 1000px) {
+  .preamble p:before {
+    animation: swim 20s linear infinite;
+  }
 }
 
 @keyframes swim {
@@ -374,6 +381,11 @@ header h1:before {
   animation-direction: normal;
   opacity: 0;
 }
+@media (min-width: 600px) {
+  header h1:before {
+    display: none;
+  }
+}
 
 header h1:after {
   content: "";
@@ -385,6 +397,11 @@ header h1:after {
   transform-origin: 0% 100%;
   animation: shooting 4s infinite 3s ease-out;
   animation-direction: normal;
+}
+@media (min-width: 600px) {
+  header h1:after {
+    display: none;
+  }
 }
 
 @keyframes shooting {
@@ -416,16 +433,32 @@ header h1:after {
 /* Moon */
 header h2:before {
   content: "";
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   border-radius: 50%;
   background: #ffffff;
   position: absolute;
-  top: 80px;
-  left: 800px;
+  top: 65px;
+  left: 280px;
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2509803922), 0 0 0 20px rgba(255, 255, 255, 0.1254901961), 0 0 0 30px rgba(255, 255, 255, 0.062745098), 0 0 0 40px rgba(255, 255, 255, 0), 0 0 0 50px rgba(255, 255, 255, 0), 0 0 20px 50px rgba(255, 255, 255, 0);
   animation: moon 2s infinite linear, shine 2s 2s infinite linear;
+}
+@media (min-width: 600px) {
+  header h2:before {
+    width: 60px;
+    height: 60px;
+    top: 90px;
+    left: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  header h2:before {
+    width: 75px;
+    height: 75px;
+    top: 80px;
+    left: 800px;
+  }
 }
 
 @keyframes shine {
@@ -439,17 +472,33 @@ header h2:before {
 /* Sun */
 footer a:before {
   content: "";
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   background: #ffd813;
   border-radius: 50%;
   position: absolute;
-  bottom: 550px;
-  left: 800px;
+  bottom: 580px;
+  left: 200px;
   box-shadow: 0 0 0 10px rgba(255, 216, 19, 0.2509803922), 0 0 0 20px rgba(255, 216, 19, 0.1254901961), 0 0 0 30px rgba(255, 216, 19, 0.062745098), 0 0 0 40px rgba(255, 216, 19, 0), 0 0 0 50px rgba(255, 216, 19, 0), 0 0 20px 50px rgba(255, 216, 19, 0);
   animation: sun 2s infinite linear, beams 2s 2s infinite linear;
   z-index: -12;
+}
+@media (min-width: 600px) {
+  footer a:before {
+    width: 60px;
+    height: 60px;
+    bottom: 550px;
+    left: 450px;
+  }
+}
+@media (min-width: 1000px) {
+  footer a:before {
+    width: 75px;
+    height: 75px;
+    bottom: 550px;
+    left: 800px;
+  }
 }
 
 @keyframes sun {
@@ -466,10 +515,13 @@ footer a:before {
   }
 }
 /* Racoon */
-body:before { /*use overflow-x: hidden; on the parent*/
-  position: fixed;
-  content: url(images/racoon.png);
-  animation: scurry 10s linear infinite;
+body:before { /*use overflow-x: hidden; on the parent*/ }
+@media (min-width: 600px) {
+  body:before {
+    position: fixed;
+    content: url(images/racoon.png);
+    animation: scurry 10s linear infinite;
+  }
 }
 
 @keyframes scurry {
@@ -531,9 +583,18 @@ header h2:after { /*use overflow-x: hidden; on the parent*/
   position: fixed;
   top: 525px;
   position: fixed;
-  top: 525px;
   content: url(images/bear.png);
-  animation: ride 10s linear infinite;
+  animation: ride 6s linear infinite;
+}
+@media (min-width: 600px) {
+  header h2:after {
+    animation: ride 8s linear infinite;
+  }
+}
+@media (min-width: 1000px) {
+  header h2:after {
+    animation: ride 10s linear infinite;
+  }
 }
 
 @keyframes ride {
@@ -552,7 +613,17 @@ body:after { /*use overflow-x: hidden; on the parent*/
   top: 125px;
   left: 5%;
   content: url(images/owl.png);
-  animation: fly 8s linear infinite;
+  animation: fly 4s linear infinite;
+}
+@media (min-width: 600px) {
+  body:after {
+    animation: fly 6s linear infinite;
+  }
+}
+@media (min-width: 1000px) {
+  body:after {
+    animation: fly 8s linear infinite;
+  }
 }
 
 @keyframes fly {

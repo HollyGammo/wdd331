@@ -26,13 +26,13 @@ body {
   font-family: "Cabin", Arial, sans-serif;
   color: #ffffff;
   background: url(images/new.png) no-repeat center 30% fixed;
-  background-size: cover;
   position: relative;
   overflow-x: hidden;
 }
 @media (min-width: 600px) {
   body {
     background: url(images/new.png) no-repeat center 100px fixed;
+    background-size: cover;
   }
 }
 
@@ -132,12 +132,7 @@ a:hover {
 /*==============Header Section=================*/
 header {
   position: relative;
-  height: 500px;
-}
-@media (min-width: 600px) {
-  header {
-    height: 700px;
-  }
+  height: 700px;
 }
 
 .summary p:first-child {
@@ -175,7 +170,7 @@ header {
     top: 195px;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .summary p:nth-child(2) {
     top: 210px;
   }
@@ -199,7 +194,7 @@ header {
 @media (min-width: 600px) {
   .preamble {
     background: #ffffff url(images/pole-fish.svg) no-repeat left 70px top 30px;
-    height: 380px;
+    height: 385px;
   }
 }
 
@@ -277,13 +272,6 @@ header {
   border-radius: 1rem;
   position: relative;
   z-index: 2;
-}
-
-.explanation p,
-.participation p,
-.benefits p,
-.requirements p {
-  width: 40.3rem;
 }
 
 .requirements {

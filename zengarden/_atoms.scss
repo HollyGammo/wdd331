@@ -15,11 +15,11 @@ html {
 body {
   @include main-text;
   background: url(images/new.png) no-repeat center 30% fixed;
-  background-size: cover;
   position: relative;
   overflow-x: hidden;
   @include breakpoint(tablet) {
     background: url(images/new.png) no-repeat center 100px fixed;
+    background-size: cover;
   }
 }
 h1 {
@@ -89,10 +89,7 @@ a:hover {
 /*==============Header Section=================*/
 header {
   position: relative;
-  height: 500px;
-  @include breakpoint(tablet) {
-    height: 700px;
-  }
+  height: 700px;
 }
 .summary p:first-child {
   color: $orange;
@@ -121,7 +118,7 @@ header {
     margin-left: 105px;
     top: 195px;
   }
-  @include breakpoint(tablet) {
+  @include breakpoint(desktop) {
     top: 210px;
   }
 }
@@ -140,7 +137,7 @@ header {
   z-index: 1;
   @include breakpoint(tablet) {
     background: #ffffff url(images/pole-fish.svg) no-repeat left 70px top 30px;
-    height: 380px;
+    height: 385px;
   }
 }
 .preamble h3 {
@@ -207,12 +204,7 @@ header {
   position: relative;
   z-index: 2
 }
-.explanation p,
-.participation p,
-.benefits p,
-.requirements p {
-width: 40.3rem;
-}
+
 .requirements {
   margin-bottom: 175px;
 }
