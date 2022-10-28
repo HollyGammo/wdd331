@@ -1,15 +1,29 @@
 @use 'variables' as *;
 @use 'atoms';
+
 /* boxes grow */
 .wrapper:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
-    border: 1px solid $white;
-    transition: max-width 1s ease-in-out;
-    max-width: 72rem;
-    background-color: rgba(30, 48, 78, 0.5);
+    @include change-blue;
+    @include breakpoint(desktop) {
+      max-width: 72rem;
+    } 
   }
   .wrapper:hover {
     background: $navy url("images/camper.png") no-repeat left 670px top 50px;
   }
+  .explanation:hover {
+    background: $navy url("images/owl.png") no-repeat left 670px top 50px;
+  }
+  .participation:hover {
+    background: $navy url("images/owl.png") no-repeat left 670px top 50px;
+  }
+  .benefits:hover {
+    background: $navy url("images/owl.png") no-repeat left 670px top 50px;
+  }
+  .requirements:hover {
+    background: $navy url("images/owl.png") no-repeat left 670px top 50px;
+  }
+
 /* Swimming Fish */
 .preamble p:before { /*use overflow-x: hidden; on the parent*/
     content: url("images/fish.png");

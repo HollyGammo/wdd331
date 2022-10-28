@@ -13,9 +13,16 @@ $yellow: #ffd813;//$accent3
 $orange: #f4ad3e;//$accent4
 $white: #ffffff;
 $navy-half: rgba(30, 48, 78, 0.5);//background for body copy
-
-
-
+/* measurement Units */
+$standard: 20px;
+$s-standard: 30px;
+$m-standard: 40px;
+$lg-standard: 45px;
+$xl-standard: 50px;
+/* Borders */
+$middle-border: 10px solid $orange;
+$section-borders: 1px solid $white;
+$corners: 1rem;
 /* Breakpoint Sizes - Media Queries */
 $break-mobile: 599px;
 $break-tablet: 600px;
@@ -35,3 +42,33 @@ $break-desktop: 1000px;
     }
 }
 
+/* Typography */
+@mixin main-text {
+    font-family: $font-body;
+    color: $white;
+}
+@mixin title { /*h1*/
+    font-family: $font-headline;
+    color: $white;
+    font-size: 3rem;
+    line-height: 2.2rem;
+}
+@mixin sub-title { /*h2*/
+    font-family: $font-subhead;
+    color: $white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+@mixin subheading { /*h3*/
+    color: $orange;
+    font-size: 1.75rem;
+    font-family: $font-subhead;
+}
+
+/* Blue Hover Sections */
+@mixin change-blue {
+    border: $section-borders;
+    transition: max-width 1s ease-in-out;
+    background-color: $navy-half;
+}
