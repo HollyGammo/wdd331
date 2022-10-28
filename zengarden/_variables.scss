@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap');
 
 /* Fonts */
-$fonts-headline: 'Fredericka the Great', Arial, cursive;  /*h1*/
-$fonts-subhead: 'Cabin Sketch', Arial, cursive;  /*h2 & h3*/
-$fonts-body:  'Cabin', Arial, sans-serif;  /*p*/
+$font-headline: 'Fredericka the Great', Arial, cursive;  /*h1*/
+$font-subhead: 'Cabin Sketch', Arial, cursive;  /*h2 & h3*/
+$font-body:  'Cabin', Arial, sans-serif;  /*p*/
 /* Colors */
-$navy:  #05173d;//$background-color: #05173d;
-$med-blue: #1a68ad;//$accent1: #1a68ad;
-$blue-green: #85EAF9;//$accent2: #85EAF9;
-$yellow: #ffd813;//$accent3: #ffe35c;
-$orange: #f4ad3e;//$accent4: #faa624;
+$sky: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);//background gradient
+$navy:  #05173d;//$background-color
+$med-blue: #1a68ad;//$accent1
+$blue-green: #85EAF9;//$accent2
+$yellow: #ffd813;//$accent3
+$orange: #f4ad3e;//$accent4
 $white: #fff;
+$navy-half: rgba(30, 48, 78, 0.5);//background for body copy
 
 

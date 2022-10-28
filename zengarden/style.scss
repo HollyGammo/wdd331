@@ -1,31 +1,9 @@
 @use 'variables' as *; //this puts all the variables in the global namespace.
 @use 'atoms';
 @use 'molecules';
+@use 'mixins';
+@use 'animations';
 @use 'organisms' as o;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  background-color: $navy;
-}
 
-body {
-  background-color: $white;
-  font-family: $fonts-body;
-  color: $text-dark;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-header {
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-}
-
-h2 {
-  writing-mode: vertical-rl;
-  grid-column: 9/10;
-}
 
