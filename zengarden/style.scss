@@ -5,5 +5,9 @@
 @use 'animations';
 @use 'organisms' as o;
 
+html {
+  background: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);
+}
+
 
 

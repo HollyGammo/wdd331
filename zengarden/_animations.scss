@@ -1,3 +1,4 @@
+@use 'variables' as *;
 /* boxes grow */
 .wrapper:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
     border: 1px solid $white;

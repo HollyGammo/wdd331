@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap");
 
-/*
-$navy:  ##05173d;;
-$med-blue: #1a68ad;
-$blue-green: #85EAF9;
-$yellow: #ffd813;
-$orange: #f4ad3e;
-$white: #fff;
-*/
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +44,7 @@ h3 {
   font-family: "Cabin Sketch", Arial, cursive;
   padding-bottom: 10px;
 }
+
 /*Grid*/
 .page-wrapper {
   display: grid;

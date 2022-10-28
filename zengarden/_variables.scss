@@ -11,10 +11,27 @@ $med-blue: #1a68ad;//$accent1
 $blue-green: #85EAF9;//$accent2
 $yellow: #ffd813;//$accent3
 $orange: #f4ad3e;//$accent4
-$white: #fff;
+$white: #ffffff;
 $navy-half: rgba(30, 48, 78, 0.5);//background for body copy
+
+
+
 /* Breakpoint Sizes - Media Queries */
 $break-mobile: 599px;
 $break-tablet: 600px;
 $break-desktop: 1000px;
+/* Media Query - Breakpoints */
+@mixin breakpoint($break) {
+    @if $break == desktop {
+        @media (min-width: $break-desktop) { @content; }
+     }
+    @else if $break == tablet {
+        @media (min-width: $break-tablet) { @content; }
+        }
+    @else if $break == mobile {
+        @media (max-width: $break-mobile) { @content; }
+    } @else {
+        @media ($break) { @content; }
+    }
+}
 
