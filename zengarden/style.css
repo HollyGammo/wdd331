@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 21 | /   @include breakpoint(tablet) {
+ * 22 | |     background-size: cover;
+ * 23 | \   }
+ *    '
+ *   _atoms.scss 21:3  @use
+ *   style.scss 2:1    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 21 \2502  \250c    @include breakpoint(tablet) {\a 22 \2502  \2502      background-size: cover;\a 23 \2502  \2514    }\a    \2575 \a   _atoms.scss 21:3  @use\a   style.scss 2:1    root stylesheet";
+}
