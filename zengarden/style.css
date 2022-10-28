@@ -300,8 +300,7 @@ footer a:first-child {
   margin-top: 294px;
 }
 
-/*use the mixins from the atoms to compose molecules. Here we make 
-modifications of elements if they need to appear differently.*/ /* boxes grow */
+/* boxes grow */
 .wrapper:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
   border: 1px solid #ffffff;
   transition: max-width 1s ease-in-out;
@@ -538,6 +537,7 @@ body:after { /*use overflow-x: hidden; on the parent*/
     transform: translate(-10vw, -2vh) rotate(10deg);
   }
 }
-/*animations & other styling*/
+/*use the mixins from the atoms to compose molecules. Here we make 
+modifications of elements if they need to appear differently.*/
 
 /*# sourceMappingURL=style.css.map */
