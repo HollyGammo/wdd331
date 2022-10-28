@@ -22,7 +22,7 @@ body {
   color: #05173d;
   position: relative;
   overflow-x: hidden;
-  max-width: 2200px;
+  max-width: 599px;
 }
 h1 {
   color: white;
@@ -84,7 +84,6 @@ a:hover {
 }
 /*==============Header Section=================*/
 header {
-  height: 500px;
   position: relative;
 }
 .summary p:first-child {
@@ -149,12 +148,15 @@ header {
   list-style: none;
   line-height: 1.5rem;
 }
-.wrapper:hover {
+/* boxes grow */
+.wrapper:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
   border: 1px solid #fff;
   transition: max-width 1s ease-in-out;
   max-width: 72rem;
   background-color: rgba(30, 48, 78, 0.5);
-  background: rgb(5, 23, 61) url("images/camper.png") no-repeat left 650px top 50px;
+}
+.wrapper:hover {
+  background: rgb(5, 23, 61) url("images/camper.png") no-repeat left 670px top 50px;
 }
 /*=======Main Text Blocks Sections=======*/
 .explanation,
@@ -171,24 +173,32 @@ header {
   position: relative;
   z-index: 2
 }
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+width: 40.3rem;
+}
+
 .requirements {
   margin-bottom: 175px;
 }
 /*========Footer - Bottom Section=============*/
 footer a {
   color: white;
-  margin-left: 60px;
+  margin-left: 46px;
 }
 footer {
   position: relative;
-  background: transparent url(images/sign.png) no-repeat left bottom 50px;
+  background: transparent url(images/sign.png) no-repeat left bottom 20px;
   height: 500px;
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 13px;
+
 }
 footer a:first-child {
-  margin-top: 220px;
+  margin-top: 294px;
 }
 
 
@@ -196,13 +206,13 @@ footer a:first-child {
 
 
 /*+++++++++ Tablet View ++++++++++++*/
+/*===================================*/
+/*===================================*/
 @media (min-width: 600px) {
   body {
     background: url(images/new.png) no-repeat center 100px fixed;
     background-size: cover;
-  }
-  header {
-    height: 1200px;
+    max-width: 999px;
   }
   h1 {
     font-size: 4rem;
@@ -256,9 +266,6 @@ footer a:first-child {
   }
   /*Design - Archives - Resources*/
 .wrapper {
-    display: flex;
-    gap: 40px;
-    margin-top: 40px;
     padding: 20px;
     max-width: 42.5rem;
   }
@@ -269,9 +276,13 @@ footer a:first-child {
     line-height: 1.5rem;
   }
 }
-
 /*+++++++++ Desktop View ++++++++++++*/
+/*===================================*/
+/*===================================*/
 @media (min-width: 1000px) {
+  body {
+    max-width: 2200px;
+  }
   h1 {
     font-size: 5rem;
     padding-top: 30px;
@@ -284,6 +295,7 @@ footer a:first-child {
     top: 210px;
   }
 }
+
 
 
 
@@ -322,10 +334,10 @@ header h1:before {
 }
 header h1:after {
   content:'';
-  position: fixed;
-  border:2px solid #F00;
+  position: absolute;
+  border:2px solid #fff;
   border-width:2px 150px 2px 150px; 
-  border-color:transparent transparent transparent #FFF;
+  border-color:transparent transparent transparent #fff;
   transform:rotate(-45deg) translate3d(1px, -1px, 0);
   transform-origin:0% 100%;
   animation:shooting 4s infinite 3s ease-out;
@@ -426,13 +438,13 @@ body:before { /*use overflow-x: hidden; on the parent*/
   13%  {bottom: 80px; right: 475px;}
   47%  {bottom: 80px; right: 475px;}
   50%  {bottom: 45px; right: 600px;}
-  60%  {bottom: 45px; right: 1200px;}
-  61%  {bottom: 80px; right: 1230px;}
-  70%  {bottom: 80px; right: 1230px;}
-  71%  {bottom: 70px; right: 1260px;}
-  77%  {bottom: 70px; right: 1260px;}
-  78%  {bottom: 40px; right: 1300px;}
-  89%  {bottom: 40px; right: 1800px;}
+  60%  {bottom: 45px; right: 1130px;}
+  61%  {bottom: 80px; right: 1160px;}
+  70%  {bottom: 80px; right: 1160px;}
+  71%  {bottom: 70px; right: 1190px;}
+  77%  {bottom: 70px; right: 1190px;}
+  78%  {bottom: 40px; right: 1230px;}
+  89%  {bottom: 40px; right: 1730px;}
   100% {bottom: 40px; right: 2225px;}
 }
 /* Bear on bike */
@@ -468,21 +480,6 @@ body:after {/*use overflow-x: hidden; on the parent*/
       }
 }
 
-/*
-@keyframes scurry {
-  0% {
-    transform: translate(10vw,-2vh) rotate(0deg);    
-  }
-  40% {
-    transform: translate(100vw,-2vh) rotate(0deg);    
-  }
-  50% {
-      transform: translate(50vw,30vh) rotate(-10deg);
-  }
-  100% {
-      transform: translate(-10vw,3vh) right(-180deg);
-      }
-}
 
 
 
