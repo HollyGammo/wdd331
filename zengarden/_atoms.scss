@@ -9,6 +9,9 @@ most of the time.  They can be overridden at the molecule (block) as necessary*/
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  background: $sky;
+}
 body {
   background: url(images/new.png) no-repeat center 100px fixed;
   font-family: $font-body;

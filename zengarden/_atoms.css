@@ -14,6 +14,10 @@ most of the time.  They can be overridden at the molecule (block) as necessary*/
   box-sizing: border-box;
 }
 
+html {
+  background: linear-gradient(0.5turn, #05173d, #1a68ad, #85eaf9);
+}
+
 body {
   background: url(images/new.png) no-repeat center 100px fixed;
   font-family: "Cabin", Arial, sans-serif;
