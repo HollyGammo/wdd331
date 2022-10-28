@@ -537,7 +537,5 @@ body:after { /*use overflow-x: hidden; on the parent*/
     transform: translate(-10vw, -2vh) rotate(10deg);
   }
 }
-/*use the mixins from the atoms to compose molecules. Here we make 
-modifications of elements if they need to appear differently.*/
 
 /*# sourceMappingURL=style.css.map */
