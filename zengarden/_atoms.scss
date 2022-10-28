@@ -16,13 +16,10 @@ body {
   @include main-text;
   background-image : url(images/new.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top 70px;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  @include breakpoint(tablet) {
-    background-position: center top 70px;
-  }
 }
 h1 {
   @include title;
