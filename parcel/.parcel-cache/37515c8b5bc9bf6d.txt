@@ -1,4 +1,5 @@
-4871
+4880
+23C:\wdd331\parcel\assets133116333164138224 1
 55C:\wdd331\parcel\node_modules\ordered-binary\index.d.ts133115559936507143 0
 49C:\wdd331\parcel\node_modules\buffer-from\LICENSE133115559930868808 0
 80C:\wdd331\parcel\node_modules\@swc\helpers\lib\_class_apply_descriptor_update.js133115559938301442 0
@@ -12,7 +13,7 @@
 79C:\wdd331\parcel\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\Makefile133115559937842664 0
 83C:\wdd331\parcel\node_modules\@popperjs\core\lib\dom-utils\getWindowScrollBarX.d.ts133115567513948097 0
 70C:\wdd331\parcel\node_modules\type-fest\source\fixed-length-array.d.ts133115559937274189 0
-21C:\wdd331\parcel\dist133116329044303863 1
+21C:\wdd331\parcel\dist133116888466683518 1
 66C:\wdd331\parcel\node_modules\@popperjs\core\lib\createPopper.d.ts133115567511704098 0
 75C:\wdd331\parcel\node_modules\@popperjs\core\lib\utils\getVariation.js.flow133115567515154870 0
 91C:\wdd331\parcel\node_modules\@parcel\node-resolver-core\test\fixture\packages\source-alias133115559945796926 1
@@ -23,6 +24,7 @@
 59C:\wdd331\parcel\node_modules\@jridgewell\set-array\LICENSE133115559930886731 0
 63C:\wdd331\parcel\node_modules\cosmiconfig\dist\loaders.d.ts.map133115559938351328 0
 50C:\wdd331\parcel\node_modules\yaml\types\binary.js133115559932422614 0
+37C:\wdd331\parcel\assets\building2.jpg133116256355648012 0
 93C:\wdd331\parcel\node_modules\@parcel\core\test\fixtures\custom-format-infer-ext\package.json133115559956318267 0
 48C:\wdd331\parcel\node_modules\.package-lock.json133115567518037211 0
 29C:\wdd331\parcel\node_modules133115567517458052 1
@@ -36,7 +38,7 @@
 71C:\wdd331\parcel\node_modules\caniuse-lite\data\features\flexbox-gap.js133115559948304677 0
 58C:\wdd331\parcel\node_modules\nth-check\lib\parse.d.ts.map133115559937542108 0
 29C:\wdd331\parcel\package.json133115567517857636 0
-31C:\wdd331\parcel\src\index.html133115563635767250 0
+31C:\wdd331\parcel\src\index.html133116331052142297 0
 69C:\wdd331\parcel\node_modules\caniuse-lite\data\features\clipboard.js133115559945432368 0
 62C:\wdd331\parcel\node_modules\css-tree\lib\syntax\node\Hash.js133115559942799413 0
 57C:\wdd331\parcel\node_modules\normalize-path\package.json133115565338232603 0
@@ -61,7 +63,7 @@
 47C:\wdd331\parcel\node_modules\yaml\package.json133115559942111249 0
 34C:\wdd331\parcel\node_modules\.bin133115565346773568 1
 44C:\wdd331\parcel\node_modules\@parcel\fs\lib133115559954298648 1
-33C:\wdd331\parcel\scss\custom.scss133115569169783980 0
+33C:\wdd331\parcel\scss\custom.scss133116334833319198 0
 67C:\wdd331\parcel\node_modules\terser\node_modules\commander\typings133115559933759035 1
 43C:\wdd331\parcel\node_modules\node-releases133115559933639363 1
 61C:\wdd331\parcel\node_modules\domutils\lib\traversal.d.ts.map133115559937463687 0
@@ -235,16 +237,6 @@
 61C:\wdd331\parcel\node_modules\svgo\plugins\removeEmptyText.js133115559942075782 0
 41C:\wdd331\parcel\node_modules\detect-libc133115559935887910 1
 44C:\wdd331\parcel\node_modules\domelementtype133115559935304507 1
-61C:\wdd331\parcel\node_modules\caniuse-lite\data\regions\AW.js133115559941273489 0
-43C:\wdd331\parcel\node_modules\svgo\bin\svgo133115559933200529 0
-38C:\wdd331\parcel\node_modules\htmlnano133115559944095952 1
-69C:\wdd331\parcel\node_modules\bootstrap\scss\bootstrap-utilities.scss133115567517398865 0
-62C:\wdd331\parcel\node_modules\react-error-overlay\package.json133115559936466359 0
-62C:\wdd331\parcel\node_modules\postcss-value-parser\lib\unit.js133115559933312782 0
-63C:\wdd331\parcel\node_modules\bootstrap\scss\_placeholders.scss133115567516890230 0
-46C:\wdd331\parcel\node_modules\get-port\license133115559947075972 0
-52C:\wdd331\parcel\node_modules\xxhash-wasm\types.d.ts133115559937014884 0
-47C:\wdd331\parcel\node_modules\yaml\browser\dist133115559941961648 1
 47C:\wdd331\parcel\node_modules\terser\bin\terser133115559933709169 0
 53C:\wdd331\parcel\node_modules\chrome-trace-event\dist133115559933868760 1
 53C:\wdd331\parcel\node_modules\node-gyp-build\index.js133115559933200529 0
@@ -276,6 +268,16 @@
 40C:\wdd331\parcel\node_modules\fill-range133115565338422097 1
 74C:\wdd331\parcel\node_modules\@swc\helpers\lib\_class_private_field_set.js133115559939498926 0
 54C:\wdd331\parcel\node_modules\bootstrap\js\dist\tab.js133115567513481185 0
+61C:\wdd331\parcel\node_modules\caniuse-lite\data\regions\AW.js133115559941273489 0
+43C:\wdd331\parcel\node_modules\svgo\bin\svgo133115559933200529 0
+38C:\wdd331\parcel\node_modules\htmlnano133115559944095952 1
+69C:\wdd331\parcel\node_modules\bootstrap\scss\bootstrap-utilities.scss133115567517398865 0
+62C:\wdd331\parcel\node_modules\react-error-overlay\package.json133115559936466359 0
+62C:\wdd331\parcel\node_modules\postcss-value-parser\lib\unit.js133115559933312782 0
+63C:\wdd331\parcel\node_modules\bootstrap\scss\_placeholders.scss133115567516890230 0
+46C:\wdd331\parcel\node_modules\get-port\license133115559947075972 0
+52C:\wdd331\parcel\node_modules\xxhash-wasm\types.d.ts133115559937014884 0
+47C:\wdd331\parcel\node_modules\yaml\browser\dist133115559941961648 1
 41C:\wdd331\parcel\node_modules\htmlparser2133115559936835365 1
 42C:\wdd331\parcel\node_modules\yaml\pair.js133115559937483627 0
 39C:\wdd331\parcel\node_modules\immutable133115565339030467 1
@@ -494,7 +496,7 @@
 52C:\wdd331\parcel\node_modules\yaml\dist\parse-cst.js133115559938205495 0
 36C:\wdd331\parcel\node_modules\terser133115559943387846 1
 82C:\wdd331\parcel\node_modules\@parcel\runtime-js\src\helpers\worker\wasm-loader.js133115559948583929 0
-39C:\wdd331\parcel\dist\index.975ef6c8.js133116329044265000 0
+39C:\wdd331\parcel\dist\index.975ef6c8.js133116333168761597 0
 47C:\wdd331\parcel\node_modules\type-fest\license133115559930838973 0
 37C:\wdd331\parcel\node_modules\timsort133115559935601486 1
 42C:\wdd331\parcel\node_modules\mdn-data\css133115559938810088 1
@@ -845,6 +847,7 @@
 66C:\wdd331\parcel\node_modules\@swc\helpers\src\_inherits_loose.mjs133115559946040742 0
 80C:\wdd331\parcel\node_modules\dom-serializer\node_modules\entities\lib\encode.js133115559932932915 0
 47C:\wdd331\parcel\node_modules\parcel\lib\bin.js133115559952104526 0
+36C:\wdd331\parcel\assets\abstract.jpg133116256355313842 0
 44C:\wdd331\parcel\node_modules\svgo\README.md133115559944654445 0
 70C:\wdd331\parcel\node_modules\utility-types\dist\aliases-and-guards.js133115559932312906 0
 61C:\wdd331\parcel\node_modules\@swc\helpers\src\_construct.mjs133115559945851246 0
@@ -1206,6 +1209,7 @@
 58C:\wdd331\parcel\node_modules\terser\lib\compress\index.js133115559940306078 0
 70C:\wdd331\parcel\node_modules\@popperjs\core\lib\dom-utils\contains.js133115567513359671 0
 62C:\wdd331\parcel\node_modules\terser\lib\compress\inference.js133115559940744902 0
+44C:\wdd331\parcel\dist\building3.b56c7b21.jpg133116888466154946 0
 61C:\wdd331\parcel\node_modules\caniuse-lite\data\regions\NU.js133115559951256781 0
 71C:\wdd331\parcel\node_modules\@parcel\core\src\requests\EntryRequest.js133115559954848712 0
 67C:\wdd331\parcel\node_modules\svgo\lib\svgo\css-select-adapter.d.ts133115559944674369 0
@@ -1363,10 +1367,10 @@
 51C:\wdd331\parcel\node_modules\source-map-js\LICENSE133115565338242577 0
 81C:\wdd331\parcel\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.c133115559941163785 0
 53C:\wdd331\parcel\node_modules\source-map-js\README.md133115565338881688 0
-50C:\wdd331\parcel\node_modules\source-map\README.md133115559931584777 0
-71C:\wdd331\parcel\node_modules\@popperjs\core\lib\modifiers\flip.js.flow133115567514398144 0
 57C:\wdd331\parcel\node_modules\source-map-js\source-map.js133115565338691551 0
 68C:\wdd331\parcel\node_modules\@popperjs\core\dist\umd\popper-base.js133115567512880954 0
+50C:\wdd331\parcel\node_modules\source-map\README.md133115559931584777 0
+71C:\wdd331\parcel\node_modules\@popperjs\core\lib\modifiers\flip.js.flow133115567514398144 0
 59C:\wdd331\parcel\node_modules\chrome-trace-event\CHANGES.md133115559933200529 0
 82C:\wdd331\parcel\node_modules\@babel\highlight\node_modules\color-convert\route.js133115559934079475 0
 61C:\wdd331\parcel\node_modules\source-map-js\lib\base64-vlq.js133115565338434295 0
@@ -1802,9 +1806,9 @@
 54C:\wdd331\parcel\node_modules\msgpackr-extract\src\.vs133115559937802776 1
 81C:\wdd331\parcel\node_modules\caniuse-lite\data\features\dom-manip-convenience.js133115559947915722 0
 61C:\wdd331\parcel\node_modules\caniuse-lite\data\regions\TR.js133115559953391074 0
-56C:\wdd331\parcel\node_modules\nth-check\lib\esm\parse.js133115559933669277 0
-85C:\wdd331\parcel\node_modules\@parcel\node-resolver-core\test\fixture\packages\source133115559945811349 1
 63C:\wdd331\parcel\node_modules\@parcel\reporter-cli\src\utils.js133115559950698272 0
+85C:\wdd331\parcel\node_modules\@parcel\node-resolver-core\test\fixture\packages\source133115559945811349 1
+56C:\wdd331\parcel\node_modules\nth-check\lib\esm\parse.js133115559933669277 0
 64C:\wdd331\parcel\node_modules\caniuse-lite\data\features\midi.js133115559950738168 0
 64C:\wdd331\parcel\node_modules\css-tree\lib\common\SyntaxError.js133115559945651775 0
 72C:\wdd331\parcel\node_modules\@popperjs\core\lib\utils\computeOffsets.js133115567514865650 0
@@ -1930,8 +1934,8 @@
 63C:\wdd331\parcel\node_modules\mdn-data\css\syntaxes.schema.json133115559938424425 0
 66C:\wdd331\parcel\node_modules\css-what\lib\commonjs\stringify.d.ts133115559938211680 0
 53C:\wdd331\parcel\node_modules\mdn-data\css\types.json133115559938520855 0
-60C:\wdd331\parcel\node_modules\mdn-data\css\units.schema.json133115559938849976 0
 67C:\wdd331\parcel\node_modules\lightningcss-win32-x64-msvc\README.md133115559931993759 0
+60C:\wdd331\parcel\node_modules\mdn-data\css\units.schema.json133115559938849976 0
 59C:\wdd331\parcel\node_modules\mdn-data\api\inheritance.json133115559936865283 0
 47C:\wdd331\parcel\node_modules\globals\readme.md133115559935820012 0
 51C:\wdd331\parcel\node_modules\is-arrayish\README.md133115559932023688 0
@@ -3374,7 +3378,7 @@
 75C:\wdd331\parcel\node_modules\caniuse-lite\data\features\media-fragments.js133115559950648405 0
 84C:\wdd331\parcel\node_modules\caniuse-lite\data\features\mediacapture-fromelement.js133115559950668350 0
 73C:\wdd331\parcel\node_modules\caniuse-lite\data\features\mediarecorder.js133115559950678339 0
-43C:\wdd331\parcel\dist\index.975ef6c8.js.map133116329044291022 0
+43C:\wdd331\parcel\dist\index.975ef6c8.js.map133116333168798857 0
 76C:\wdd331\parcel\node_modules\caniuse-lite\data\features\meta-theme-color.js133115559950708261 0
 65C:\wdd331\parcel\node_modules\caniuse-lite\data\features\meter.js133115559950708261 0
 69C:\wdd331\parcel\node_modules\caniuse-lite\data\features\mpeg-dash.js133115559950798016 0
@@ -3789,10 +3793,11 @@
 68C:\wdd331\parcel\node_modules\@swc\helpers\src\_class_call_check.mjs133115559945532097 0
 61C:\wdd331\parcel\node_modules\@parcel\watcher\src\Debounce.hh133115559939308750 0
 85C:\wdd331\parcel\node_modules\@swc\helpers\src\_class_check_private_static_access.mjs133115559945542919 0
+43C:\wdd331\parcel\dist\abstract.3c44bee5.jpg133116888466166862 0
 95C:\wdd331\parcel\node_modules\@swc\helpers\src\_class_check_private_static_field_descriptor.mjs133115559945572002 0
 79C:\wdd331\parcel\node_modules\@parcel\source-map\parcel_sourcemap_node\index.js133115559940934401 0
 62C:\wdd331\parcel\node_modules\@popperjs\core\dist\cjs\enums.js133115567512292822 0
-44C:\wdd331\parcel\dist\index.1346fb5e.css.map133116329044037812 0
+44C:\wdd331\parcel\dist\index.1346fb5e.css.map133116888466533108 0
 76C:\wdd331\parcel\node_modules\@swc\helpers\src\_class_private_field_init.mjs133115559945641805 0
 66C:\wdd331\parcel\node_modules\@parcel\core\lib\UncommittedAsset.js133115559956123758 0
 82C:\wdd331\parcel\node_modules\@swc\helpers\src\_class_private_field_loose_base.mjs133115559945651775 0
@@ -4547,6 +4552,7 @@
 87C:\wdd331\parcel\node_modules\@parcel\core\test\fixtures\config-node-pipeline\.parcelrc133115559953979496 0
 79C:\wdd331\parcel\node_modules\@parcel\fs-search\fs-search.linux-arm64-musl.node133115559942544168 0
 77C:\wdd331\parcel\node_modules\@parcel\fs-search\fs-search.linux-x64-musl.node133115559943736895 0
+44C:\wdd331\parcel\dist\building1.7d25caa0.jpg133116888466166862 0
 77C:\wdd331\parcel\node_modules\@parcel\fs-search\fs-search.win32-x64-msvc.node133115559944026813 0
 53C:\wdd331\parcel\node_modules\@parcel\fs\src\index.js133115559953860839 0
 56C:\wdd331\parcel\node_modules\@parcel\fs\src\MemoryFS.js133115559953939603 0
@@ -4868,5 +4874,8 @@
 41C:\wdd331\parcel\node_modules\.bin\terser133115559996178597 0
 45C:\wdd331\parcel\node_modules\.bin\terser.cmd133115559996178597 0
 45C:\wdd331\parcel\node_modules\.bin\terser.ps1133115559996178597 0
-40C:\wdd331\parcel\dist\index.1346fb5e.css133116329043983409 0
-32C:\wdd331\parcel\dist\index.html133115565356530742 0
+44C:\wdd331\parcel\dist\building2.24dad8df.jpg133116888466474083 0
+40C:\wdd331\parcel\dist\index.1346fb5e.css133116888466494027 0
+32C:\wdd331\parcel\dist\index.html133116888466679631 0
+37C:\wdd331\parcel\assets\building1.jpg133116256355477618 0
+37C:\wdd331\parcel\assets\building3.jpg133116256355802517 0
