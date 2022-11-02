@@ -1,3 +1,20 @@
+div {
+  display: flex;
+  gap: 30px;
+  width: 800px;
+  margin: 0 auto;
+}
 
+#pattern-border {
+  fill: black;
+}
+
+.card {
+  width: 300px;
+  height: 420px;
+  margin-top: 30px;
+  border-radius: 8px;
+  background: linear-gradient(0.15turn, #f29dca, #1a68ad, #29c0c2, #f29dca);
+}
 
 /*# sourceMappingURL=style.css.map */
