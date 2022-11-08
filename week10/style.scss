@@ -1,0 +1,75 @@
+$color-one: rgba(0, 0, 0, 0.829);
+$color-two: #8a8a8a;
+$color-three: #ff0000;
+$zero: 0;
+$five: 5px;
+$twenty: 20px;
+$fifty: 50px;
+
+
+* {
+  margin: $zero;
+  padding: $zero;
+}
+body {
+  padding-left: 10px;
+}
+div p {
+  padding-bottom: $twenty;
+}
+.content p {
+  padding-top: $twenty;
+}
+.menu-icon {
+  padding-top: $five;
+  width: $fifty;
+  height: $fifty;
+}
+.menu-icon span {
+  display: block;
+  position: relative;
+  background-color: rgb(157, 157, 157);
+  z-index: 2;
+  width: 35px;
+  height: $five;
+  margin: 5px 0;
+  transition: 1s;
+}
+.menu-icon span:hover {
+    background-color: red;
+    transition: .01s;
+}
+.open .top {
+  transform: translate(200px, 10px) rotate(45deg);
+}
+.open .middle {
+  transform: translate(200px, 0px);
+  opacity: $zero;
+}
+.open .bottom {
+  transform: translate(200px, -10px) rotate(-45deg);
+}
+.menu {
+    position: absolute;
+  background-color: rgba(0, 0, 0, 0.829);
+  width: $zero;
+  height: 100%;
+  top: $zero;
+  left: $zero;
+  opacity: $zero;
+  transition: 0.5s;
+}
+.menu.items {
+  opacity: 1;
+  padding: 60px 200px 0 60px;
+}
+a {
+  text-decoration: none;
+  color: darkgrey;
+  font-size: 22px;
+}
+a:hover {
+    color: red;
+}
+
+
