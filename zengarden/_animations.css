@@ -337,11 +337,11 @@ footer a:first-child {
 }
 
 .benefits:hover {
-  background: #05173d url("images/owl.png") no-repeat left 670px top 50px;
+  background: #05173d url("images/squirrel.png") no-repeat left 740px top 30px;
 }
 
 .requirements:hover {
-  background: #05173d url("images/owl.png") no-repeat left 670px top 50px;
+  background: #05173d url("images/bigfoot.png") no-repeat left 640px top 10px;
 }
 
 /* Swimming Fish */
@@ -635,6 +635,39 @@ body:after {
   }
   100% {
     transform: translate(-10vw, -2vh) rotate(10deg);
+  }
+}
+/* Bigfoot */
+header:after {
+  position: fixed;
+  content: url(images/smallfoot.png);
+  animation: creep 10s linear infinite;
+}
+
+@keyframes creep {
+  0% {
+    bottom: 70px;
+    left: -250px;
+  }
+  10% {
+    bottom: 70px;
+    left: -250px;
+  }
+  20% {
+    bottom: 70px;
+    left: 30px;
+  }
+  45% {
+    bottom: 70px;
+    left: 30px;
+  }
+  60% {
+    bottom: 70px;
+    left: -250px;
+  }
+  100% {
+    bottom: 70px;
+    left: -250px;
   }
 }
 
