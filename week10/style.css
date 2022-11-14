@@ -38,7 +38,7 @@ div p {
 }
 
 .open .top {
-  transform: translate(200px, 10px) rotate(45deg);
+  transform: translate(200px, 10px) rotate(315deg);
 }
 
 .open .middle {
@@ -47,7 +47,7 @@ div p {
 }
 
 .open .bottom {
-  transform: translate(200px, -10px) rotate(-45deg);
+  transform: translate(200px, -10px) rotate(-315deg);
 }
 
 .menu {

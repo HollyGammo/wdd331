@@ -40,14 +40,14 @@ div p {
     transition: .01s;
 }
 .open .top {
-  transform: translate(200px, 10px) rotate(45deg);
+  transform: translate(200px, 10px) rotate(315deg);
 }
 .open .middle {
   transform: translate(200px, 0px);
   opacity: $zero;
 }
 .open .bottom {
-  transform: translate(200px, -10px) rotate(-45deg);
+  transform: translate(200px, -10px) rotate(-315deg);
 }
 .menu {
     position: absolute;
