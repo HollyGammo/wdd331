@@ -443,7 +443,7 @@ header h2:before {
   position: absolute;
   top: 65px;
   left: 280px;
-  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2509803922), 0 0 0 20px rgba(255, 255, 255, 0.1254901961), 0 0 0 30px rgba(255, 255, 255, 0.062745098), 0 0 0 40px rgba(255, 255, 255, 0), 0 0 0 50px rgba(255, 255, 255, 0), 0 0 20px 50px rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
   animation: moon 2s infinite linear, shine 2s 2s infinite linear;
 }
 @media (min-width: 600px) {
@@ -465,10 +465,10 @@ header h2:before {
 
 @keyframes shine {
   0% {
-    box-shadow: 0 0 0 0 #ffffff, 0 0 0 10px rgba(255, 255, 255, 0.2509803922), 0 0 0 20px rgba(255, 255, 255, 0.1254901961), 0 0 0 30px rgba(255, 255, 255, 0.062745098), 0 0 0 40px rgba(255, 255, 255, 0), 0 0 20px 50px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 #ffffff, 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 20px 50px #ffffff00;
   }
   100% {
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2509803922), 0 0 0 20px rgba(255, 255, 255, 0.1254901961), 0 0 0 30px rgba(255, 255, 255, 0.062745098), 0 0 0 40px rgba(255, 255, 255, 0), 0 0 0 50px rgba(255, 255, 255, 0), 0 0 20px 50px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px #ffffff40, 0 0 0 20px #ffffff20, 0 0 0 30px #ffffff10, 0 0 0 40px #ffffff00, 0 0 0 50px #ffffff00, 0 0 20px 50px #ffffff00;
   }
 }
 /* Sun */
@@ -482,7 +482,7 @@ footer a:before {
   position: absolute;
   bottom: 580px;
   left: 200px;
-  box-shadow: 0 0 0 10px rgba(255, 216, 19, 0.2509803922), 0 0 0 20px rgba(255, 216, 19, 0.1254901961), 0 0 0 30px rgba(255, 216, 19, 0.062745098), 0 0 0 40px rgba(255, 216, 19, 0), 0 0 0 50px rgba(255, 216, 19, 0), 0 0 20px 50px rgba(255, 216, 19, 0);
+  box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
   animation: sun 2s infinite linear, beams 2s 2s infinite linear;
   z-index: -12;
 }
@@ -510,10 +510,10 @@ footer a:before {
 }
 @keyframes beams {
   0% {
-    box-shadow: 0 0 0 0 #ffd813, 0 0 0 10px rgba(255, 216, 19, 0.2509803922), 0 0 0 20px rgba(255, 216, 19, 0.1254901961), 0 0 0 30px rgba(255, 216, 19, 0.062745098), 0 0 0 40px rgba(255, 216, 19, 0), 0 0 20px 50px rgba(255, 216, 19, 0);
+    box-shadow: 0 0 0 0 #ffd813, 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 20px 50px #ffd81300;
   }
   100% {
-    box-shadow: 0 0 0 10px rgba(255, 216, 19, 0.2509803922), 0 0 0 20px rgba(255, 216, 19, 0.1254901961), 0 0 0 30px rgba(255, 216, 19, 0.062745098), 0 0 0 40px rgba(255, 216, 19, 0), 0 0 0 50px rgba(255, 216, 19, 0), 0 0 20px 50px rgba(255, 216, 19, 0);
+    box-shadow: 0 0 0 10px #ffd81340, 0 0 0 20px #ffd81320, 0 0 0 30px #ffd81310, 0 0 0 40px #ffd81300, 0 0 0 50px #ffd81300, 0 0 20px 50px #ffd81300;
   }
 }
 /* Racoon */
@@ -670,5 +670,3 @@ header:after {
     left: -250px;
   }
 }
-
-/*# sourceMappingURL=_animations.css.map */

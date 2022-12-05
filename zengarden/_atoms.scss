@@ -94,7 +94,7 @@ header {
     height: 1100px;
   }
   @include breakpoint(desktop) {
-    height: 720;
+    height: 720px;
   }
 }
 .summary p:first-child {
